@@ -1,0 +1,26 @@
+.easypie-chart {
+    display: inline-block;
+    position: relative;
+    padding: 0 6px
+}
+
+.easypie-chart .percentage, .easypie-chart span {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    margin-left: -50%;
+    height: 30px;
+    margin-top: -15px;
+    line-height: 25px;
+    text-align: center
+}
+
+.easypie-chart span {
+    font-size: 20px
+}
+
+.easypie-chart canvas {
+    max-width: 100%
+}

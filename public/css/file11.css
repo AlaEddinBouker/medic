@@ -1,0 +1,7 @@
+.gmap {
+    height: 300px
+}
+
+.gmap.gmap-sm {
+    height: 150px
+}

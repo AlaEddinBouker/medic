@@ -1,0 +1,7 @@
+[data-type=textarea] + .editable-container.editable-inline, [data-type=textarea] + .editable-container.editable-inline .editable-input, [data-type=textarea] + .editable-container.editable-inline .editableform .control-group, [data-type=textarea] + .editable-container.editable-inline .editableform textarea.form-control {
+    width: 100%
+}
+
+.editableform > .form-group {
+    display: block
+}

@@ -1,0 +1,15 @@
+.form-validate .form-control.error {
+    border-color: #f44336
+}
+
+.form-validate .form-control.valid, .form-validate .form-control.valid:focus {
+    border-color: #4caf50
+}
+
+.form-validate .has-error .form-control {
+    border-color: #f44336 !important
+}
+
+.form-validate .c-checkbox input.error + span, .form-validate .c-radio input.error + span {
+    border-color: #f44336
+}
