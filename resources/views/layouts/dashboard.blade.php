@@ -163,7 +163,7 @@
                                             class="float-right nav-label"></span><span>Add Patient</span></a>
                                 </li>
                                 <li>
-                                    <a class="ripple" href="radial.html"><span
+                                    <a class="ripple" href="{{url('/patient')}}"><span
                                             class="float-right nav-label"></span><span>Patiens list</span></a>
                                 </li>
 

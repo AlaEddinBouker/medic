@@ -209,7 +209,6 @@
 
             </div>
         </div>
-
         <div class="cardbox">
             <div class="cardbox-heading">
                 Comfort
@@ -259,6 +258,33 @@
                                        aria-required="true" aria-invalid="true">
                                 <div class="mda-form-control-line"></div>
                                 <label>Promenade</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cardbox">
+            <div class="cardbox-heading">
+                Oraganisation et sécurité
+            </div>
+            <div class="cardbox-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mda-form-group float-label">
+                            <div class="mda-form-control">
+                                <input name="contention" class="form-control" required="" tabindex="0"
+                                       aria-required="true" aria-invalid="true">
+                                <div class="mda-form-control-line"></div>
+                                <label>Contention</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row mb">
+                            <div class="col-md-12"><label class="switch">
+                                    <input name="security" type="checkbox" checked="checked">
+                                    <span></span></label>Sécurité
                             </div>
                         </div>
                     </div>
