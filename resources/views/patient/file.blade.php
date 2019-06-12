@@ -18,7 +18,7 @@
 @section('content')
     <h4>Fiche de {{$name}}</h4>
     <hr>
-    <form method="post" action="#">
+    <form method="POST" action="{{url('/file/store')}}">
         @csrf
         <input type="text" value="{{$id}}" hidden>
         <div class="cardbox">
