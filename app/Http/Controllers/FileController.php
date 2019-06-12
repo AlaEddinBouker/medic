@@ -40,6 +40,7 @@ class FileController extends Controller
             'id' => 'required',
             'alimentation' => 'required',
             'petitdej' => 'required',
+            'dinner' => 'required',
             'dejene' => 'required',
             'poid' => 'required',
             'temperature' => 'required',
@@ -61,6 +62,7 @@ class FileController extends Controller
         $file->alimentation = $request->input('alimentation');
         $file->petitdej = $request->input('petitdej');
         $file->dejene = $request->input('dejene');
+        $file->dinner = $request->input('dinner');
         $file->poid = $request->input('poid');
         $file->temperature = $request->input('temperature');
         $file->tension = $request->input('tension');
