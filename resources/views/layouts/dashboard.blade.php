@@ -109,11 +109,11 @@
                         <ul
                                 class="sidebar-subnav">
                             <li>
-                                <a class="ripple" href="flot.html"><span
+                                <a class="ripple" href="{{url('/users/add')}}"><span
                                             class="float-right nav-label"></span><span>Add user</span></a>
                             </li>
                             <li>
-                                <a class="ripple" href="radial.html"><span class="float-right nav-label"></span><span>User list</span></a>
+                                <a class="ripple" href="{{url('/users')}}"><span class="float-right nav-label"></span><span>User list</span></a>
                             </li>
 
                         </ul>

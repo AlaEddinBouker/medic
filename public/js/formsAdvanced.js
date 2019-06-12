@@ -778,6 +778,10 @@
                     o()("#select2-1").select2(), o()("#select2-2").select2(), o()("#select2-langue").select2(), o()("#select2-langue").select2({
                     placeholder: "Selectionner une language",
                     allowClear: !0
+                }),
+                    o()("#select2-1").select2(), o()("#select2-2").select2(), o()("#select2-role").select2(), o()("#select2-role").select2({
+                    placeholder: "Selectionner un role",
+                    allowClear: !0
                 }), o()("#example-datepicker-1").datepicker(), o()("#example-datepicker-2").datepicker(), o()("#example-datepicker-3").datepicker(), o()("#example-datepicker-4").on("show", fix_xeditable_conflict).datepicker({
                     autoclose: !0,
                     container: "#example-datepicker-container-4"

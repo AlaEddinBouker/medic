@@ -47,7 +47,7 @@
                         <div class="col-md-4">
 
                             <div class="mda-form-control"><input class="form-control" id="example-datepicker-4"
-                                                                 type="date" data-date="12/13/2016"
+                                                                 type="date" name="birth" data-date="12/13/2016"
                                                                  placeholder="Select a date..">
                                 <div class="mda-form-control-line"></div>
                                 <label>Date naissance</label></div>
@@ -199,10 +199,21 @@
                             <div class="mda-form-control6">
 
                                 <label class="switch switch-primary">
-                                    <input type="checkbox" name="alcool" checked="checked"><span></span></label>Alcool
+                                    <input type="checkbox" name="alcool"  value="on" checked><span></span></label>Alcool
 
                             </div>
 
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="mda-form-group">
+                                <div class="mda-form-control">
+                                    <textarea name="tmed" class="form-control" rows="4"
+                                              aria-multiline="true" tabindex="0"
+                                              aria-invalid="false"></textarea>
+                                    <div class="mda-form-control-line"></div>
+                                    <label>Type médicaments</label>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -311,6 +322,25 @@
                                     <label>Email</label></div>
                             </div>
                         </div>
+                        <div class="col-sm-6">
+                            <div class="mda-form-group float-label">
+                                <div class="mda-form-control"><input type="password" name="password" class="form-control" required=""
+                                                                     tabindex="0"
+                                                                     aria-required="true" aria-invalid="true">
+                                    <div class="mda-form-control-line"></div>
+                                    <label>Password</label></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="mda-form-group float-label">
+                                <div class="mda-form-control"><input type="password" name="cpassword" class="form-control" required=""
+                                                                     tabindex="0"
+                                                                     aria-required="true" aria-invalid="true">
+                                    <div class="mda-form-control-line"></div>
+                                    <label>Confirm password</label></div>
+                            </div>
+                        </div>
+
                     </div>
                 </section>
             </form>

@@ -19,6 +19,7 @@ Auth::routes();
 //user rootes
 Route::get('/users/add', 'UsersController@add')->name('add');
 Route::get('/users', 'UsersController@index');
+Route::post('/users/store','UsersController@store');
 
 //end user rootes
 
