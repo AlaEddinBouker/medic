@@ -33,6 +33,8 @@ Route::get('/roles/delete/{id}', 'RolesController@delete');
 //END ROLE ROOTES
 Route::get('/patients/add','PatientController@create');
 Route::post('/patient/store','PatientController@store');
+Route::get('/patient','PatientController@index');
+Route::get('/patient/file/{id}','PatientController@file');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
