@@ -193,6 +193,7 @@
             </div>
         </aside>
         <div class="sidebar-layout-obfuscator"></div>
+        @yield('profile')
         <main class="main-container">
             <section>
                 <div class="content-heading bg-white">
@@ -209,7 +210,9 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="container-fluid">
+
                     <div class="cardbox">
                         <div class="cardbox-body">
                             @yield('content')
@@ -217,6 +220,7 @@
                     </div>
 
                 </div>
+
             </section>
             <footer><span>2019 - DEVROWS †</span></footer>
         </main>

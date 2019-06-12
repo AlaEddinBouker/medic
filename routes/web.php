@@ -32,6 +32,7 @@ Route::post('/roles/update', 'RolesController@update');
 Route::get('/roles/delete/{id}', 'RolesController@delete');
 //END ROLE ROOTES
 Route::get('/patients/add','PatientController@create');
+Route::get('/patients/profile','PatientController@profile');
 Route::post('/patient/store','PatientController@store');
 Route::get('/patient','PatientController@index');
 Route::get('/patient/file/{id}','PatientController@file');

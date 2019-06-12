@@ -132,4 +132,8 @@ class PatientController extends Controller
     {
         //
     }
+    public function profile()
+    {
+        return view('patient.profile');
+    }
 }
