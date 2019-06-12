@@ -1,6 +1,6 @@
 @extends('layouts.dashboard')
 @section('title')
-    Add New Role
+    Add New patient
 @endsection
 {{--@section('navs')
     <div class="content-subheader">
@@ -34,7 +34,7 @@
                     <td>{{$patient->prenom}}</td>
                     <td>{{$patient->room}}</td>
                     <td>
-                        <a href=""
+                        <a href="{{url('/patient/profile/'.$patient->id)}}"
                            class="mb-2 mr-2 btn btn-oval btn-raised btn-primary ripple">Profile </a>
                         <a href="{{url('patient/file/'.$patient->id)}}"
                            class="mb-2 mr-2 btn btn-oval btn-raised btn-success ripple">File </a>

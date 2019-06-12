@@ -193,152 +193,108 @@
         </div>
     </aside>
     <div class="sidebar-layout-obfuscator"></div>
-            <main class="main-container">
-                <section>
-                    <div class="container-overlap bg-blue-500">
-                        <div class="media m0 pv">
-                            <div class="d-flex mr"><a href="#"><img class="rounded-circle thumb64" src="/src/images/03.jpg"
-                                                                    alt="User"></a></div>
-                            <div class="media-body"><h4 class="mt-sm mb0">Christine Matthews</h4><span class="text-muted">Sed eget lacus quis diam molestie mollis.</span>
-                            </div>
-                        </div>
+    <main class="main-container">
+        <section>
+            <div class="container-overlap bg-blue-500">
+                <div class="media m0 pv">
+                    <div class="d-flex mr"><a href="#"><img class="rounded-circle thumb64" src="/src/images/03.jpg"
+                                                            alt="User"></a></div>
+                    <div class="media-body"><h4 class="mt-sm mb0">{{$patient->nom.' '.$patient->prenom}}</h4><span class="text-muted">Chambre Numéro {{$patient->room}}</span>
                     </div>
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-lg-7 col-xl-8">
-                                <form class="cardbox" editable-form="" name="user.profileForm">
-                                    <div class="cardbox-heading pb0">
-                                        <div class="float-right dropdown">
-                                            <button class="btn btn-secondary btn-flat btn-flat-icon" type="button"
-                                                    data-toggle="dropdown"><em class="ion-android-more-vertical"></em></button>
-                                            <div class="dropdown-menu dropdown-menu-right" role="menu"><a class="dropdown-item"
-                                                                                                          href="#">Action
-                                                    1</a><a class="dropdown-item" href="#">Action 2</a></div>
-                                        </div>
-                                        <h5 class="m-0">About</h5></div>
-                                    <div class="cardbox-body"><p class="is-editable text-inherit" data-type="textarea">
-                                            Pellentesque porta tincidunt justo, non fringilla erat iaculis in. Sed nisi erat, ornare
-                                            eu pellentesque quis, pellentesque non nulla. Proin rutrum, est pellentesque commodo
-                                            mattis, sem justo porttitor odio, id aliquet lacus augue nec nisl.</p></div>
-                                    <div class="cardbox-divider"></div>
-                                    <div class="cardbox-offset">
-                                        <div class="cardbox-offset-item text-right">
-                                            <button class="btn-raised btn btn-warning btn-circle btn-lg" id="edit-enable"
-                                                    type="button"><em class="ion-edit"></em></button>
-                                            <button class="btn-raised btn btn-success btn-circle btn-lg d-none"
-                                                    id="edit-disable" type="submit"><em class="ion-checkmark-round"></em>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <h5 class="cardbox-heading pb0">Contact Information</h5>
-                                    <div class="cardbox-body">
-                                        <table class="table table-striped">
-                                            <tbody>
-                                            <tr>
-                                                <td><em class="ion-document-text icon-fw mr"></em>Area</td>
-                                                <td>Research &amp; development</td>
-                                            </tr>
-                                            <tr>
-                                                <td><em class="ion-egg icon-fw mr"></em>Birthday</td>
-                                                <td><span class="is-editable text-inherit" data-type="combodate"
-                                                          data-mode="inline">10/11/2000</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td><em class="ion-ios-body icon-fw mr"></em>Member since</td>
-                                                <td><span class="is-editable text-inherit" data-type="combodate"
-                                                          data-mode="inline">05/11/2015</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td><em class="ion-man icon-fw mr"></em>Gender</td>
-                                                <td><a class="text-inherit" id="gender" href="#" data-type="select" data-pk="1"
-                                                       data-value="2" data-title="Select sex"></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td><em class="ion-android-home icon-fw mr"></em>Address</td>
-                                                <td><span class="is-editable text-inherit">Some street, 123</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td><em class="ion-email icon-fw mr"></em>Email</td>
-                                                <td><span class="is-editable text-inherit"><a href="#">user@mail.com</a></span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td><em class="ion-ios-telephone icon-fw mr"></em>Contact phone</td>
-                                                <td><span class="is-editable text-inherit">13-123-46578</span></td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div class="cardbox-divider"></div>
-                                    <h5 class="cardbox-heading pb0">Recent articles</h5>
-                                    <div class="cardbox-body">
-                                        <ul class="mda-list">
-                                            <li class="mda-list-item pl0 bb">
-                                                <div class="mda-list-item-text"><h3><a href="#">Release 3.0 is out</a></h3>
-                                                    <p>Proin metus justo, commodo in ultrices...</p>
-                                                    <small class="text-muted">2 days ago</small>
-                                                </div>
-                                                <div class="float-right">
-                                                    <div class="pt-lg"><em class="icon-2x ion-checkmark-circled text-success"
-                                                                           tooltip="Active"></em></div>
-                                                </div>
-                                            </li>
-                                            <li class="mda-list-item pl0 bb">
-                                                <div class="mda-list-item-text"><h3><a href="#">Improving compatibility</a></h3>
-                                                    <p>Proin metus justo, commodo in ultrices...</p>
-                                                    <small class="text-muted">3 days ago</small>
-                                                </div>
-                                                <div class="float-right">
-                                                    <div class="pt-lg"><em class="icon-2x ion-checkmark-circled text-success"
-                                                                           tooltip="Active"></em></div>
-                                                </div>
-                                            </li>
-                                            <li class="mda-list-item pl0">
-                                                <div class="mda-list-item-text"><h3><a href="#">Small decisions count</a></h3>
-                                                    <p>Proin metus justo, commodo in ultrices...</p>
-                                                    <small class="text-muted">3 days ago</small>
-                                                </div>
-                                                <div class="float-right">
-                                                    <div class="pt-lg"><em class="icon-2x ion-minus-circled text-warning"
-                                                                           tooltip="Pending"></em></div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="col-lg-5 col-xl-4">
-                                <div class="cardbox">
-                                    <h5 class="cardbox-heading">Historique</h5>
-                                    <div class="cardbox-body pb0"><p class="float-left mr"><em
-                                                    class="ion-record text-info"></em></p>
-                                        <div class="oh"><p><strong class="mr-sm">Added</strong><span
-                                                        class="mr-sm">a new issue</span><a href="#">#5478</a></p>
-                                            <div class="clearfix">
-                                                <div class="float-left text-muted"><em
-                                                            class="ion-android-time mr-sm"></em><span>an hour ago</span></div>
-                                            </div>
-                                        </div>
-                                    </div><div class="cardbox-body pb0"><p class="float-left mr"><em
-                                                    class="ion-record text-info"></em></p>
-                                        <div class="oh"><p><strong class="mr-sm">Added</strong><span
-                                                        class="mr-sm">a new issue</span><a href="#">#5478</a></p>
-                                            <div class="clearfix">
-                                                <div class="float-left text-muted"><em
-                                                            class="ion-android-time mr-sm"></em><span>an hour ago</span></div>
-                                            </div>
-                                        </div>
-                                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-7 col-xl-8">
+                        <form class="cardbox" editable-form="" name="user.profileForm">
 
+                            <h5 class="cardbox-heading pb0">Fiche numéro {{$f->id}}</h5>
+                            <div class="cardbox-body">
+                                <table class="table table-striped">
+                                    <tbody>
+                                    <tr>
+                                        <td><em class="ion-document-text icon-fw mr"></em>Area</td>
+                                        <td>Research &amp; development</td>
+                                    </tr>
+                                    <tr>
+                                        <td><em class="ion-egg icon-fw mr"></em>Birthday</td>
+                                        <td><span class="is-editable text-inherit" data-type="combodate"
+                                                  data-mode="inline">10/11/2000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><em class="ion-ios-body icon-fw mr"></em>Member since</td>
+                                        <td><span class="is-editable text-inherit" data-type="combodate"
+                                                  data-mode="inline">05/11/2015</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><em class="ion-man icon-fw mr"></em>Gender</td>
+                                        <td><a class="text-inherit" id="gender" href="#" data-type="select" data-pk="1"
+                                               data-value="2" data-title="Select sex"></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><em class="ion-android-home icon-fw mr"></em>Address</td>
+                                        <td><span class="is-editable text-inherit">Some street, 123</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><em class="ion-email icon-fw mr"></em>Email</td>
+                                        <td><span class="is-editable text-inherit"><a href="#">user@mail.com</a></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><em class="ion-ios-telephone icon-fw mr"></em>Contact phone</td>
+                                        <td><span class="is-editable text-inherit">13-123-46578</span></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="cardbox-divider"></div>
+                        </form>
+                    </div>
+                    <div class="col-lg-5 col-xl-4">
+                        <div class="cardbox">
+                            <h5 class="cardbox-heading">Historique</h5>
+                            @foreach($files as $file)
+                                <div class="cardbox-body pb0"><p class="float-left mr"><em
+                                                class="ion-record text-info"></em></p>
+                                    <div class="oh"><p><strong class="mr-sm"><a href="#"  data-toggle="modal" data-target="#mymodal{{$file->id}}"> Fiche numéro {{$file->id}}</a></strong><span>
+
+                                        <div class="clearfix">
+                                            <div class="float-left text-muted"><em
+                                                        class="ion-android-time mr-sm"></em><span>{{$file->created_at->diffForHumans()}}</span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
+                                <div class="cardbox-divider"></div>
+
+                                <div class="modal fade" id="mymodal{{$file->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Fiche numéro {{$file->id}}</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                               FILE STUFF HERE
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn  btn-oval  btn-raised btn-secondary ripple" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endforeach
                         </div>
                     </div>
-                </section>
+                </div>
+            </div>
+        </section>
 
-            </main>
+    </main>
 
-        <footer><span>2019 - DEVROWS †</span></footer>
+    <footer><span>2019 - DEVROWS †</span></footer>
     </main>
 </div>
 

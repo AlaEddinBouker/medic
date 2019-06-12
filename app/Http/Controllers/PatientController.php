@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\file;
 use App\Patient;
 use App\User;
 use Illuminate\Http\Request;
@@ -132,8 +133,11 @@ class PatientController extends Controller
     {
         //
     }
-    public function profile()
+    public function profile($id)
     {
-        return view('patient.profile');
+        $patient=Patient::where('id',$id)->first();
+        $f=file::where('patient_id',$id)->orderBy('created_at', 'desc')->first();;
+        $files=file::where('patient_id',$id)->orderBy('created_at', 'desc')->get();
+        return view('patient.profile',compact('patient','f','files'));
     }
 }
