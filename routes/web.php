@@ -35,3 +35,7 @@ Route::get('/patients/add','PatientController@create');
 Route::post('/patient/store','PatientController@store');
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/appointment', 'AppointmentsController@index');
+Route::post('/appointment','AppointmentsController@create');
+Route::get('/appointments/show','AppointmentsController@show');
