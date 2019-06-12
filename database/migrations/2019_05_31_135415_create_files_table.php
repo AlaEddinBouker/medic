@@ -27,7 +27,7 @@ class CreateFilesTable extends Migration
             $table->string('tension')->nullable();
             $table->string('pouls')->nullable();
             $table->string('glycerine')->nullable();
-            $table->date('viste')->nullable();
+            $table->string('viste')->nullable();
 
             //Hygiéne
 
@@ -42,8 +42,8 @@ class CreateFilesTable extends Migration
             $table->boolean('soinPied')->default(false);
             //Comfort
 
-            $table->time('heurR');
-            $table->time('heurC');
+            $table->string('heurR');
+            $table->string('heurC');
             $table->string('sieste')->nullable();
             $table->string('deplacement')->nullable();
             $table->string('promenade')->nullable();
