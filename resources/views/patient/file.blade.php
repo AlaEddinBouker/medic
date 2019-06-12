@@ -17,8 +17,10 @@
 @endsection--}}
 @section('content')
     <h4>Fiche de {{$name}}</h4>
+    <hr>
     <form method="post" action="#">
         @csrf
+        <input type="text" value="{{$id}}" hidden>
         <div class="cardbox">
             <div class="cardbox-heading">Relevé</div>
             <div class="cardbox-body">
@@ -291,5 +293,95 @@
                 </div>
             </div>
         </div>
+        <div class="cardbox">
+            <div class="card-header">
+                Loisir
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="row mb">
+                            <div class="col-md-12"><label class="switch">
+                                    <input name="piscine" type="checkbox" checked="checked">
+                                    <span></span></label>Piscine
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row mb">
+                            <div class="col-md-12"><label class="switch">
+                                    <input name="golf" type="checkbox" checked="checked">
+                                    <span></span></label>Golf
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row mb">
+                            <div class="col-md-12"><label class="switch">
+                                    <input name="tennis" type="checkbox" checked="checked">
+                                    <span></span></label>Tennis
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row mb">
+                            <div class="col-md-12"><label class="switch">
+                                    <input name="jeux" type="checkbox" checked="checked">
+                                    <span></span></label>Jeux
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row mb">
+                            <div class="col-md-12"><label class="switch">
+                                    <input name="lecture" type="checkbox" checked="checked">
+                                    <span></span></label>Lecture
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row mb">
+                            <div class="col-md-12"><label class="switch">
+                                    <input name="cinema" type="checkbox" checked="checked">
+                                    <span></span></label>Cinema
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row mb">
+                            <div class="col-md-12"><label class="switch">
+                                    <input name="danse" type="checkbox" checked="checked">
+                                    <span></span></label>Dance
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row mb">
+                            <div class="col-md-12"><label class="switch">
+                                    <input name="Television" type="checkbox" checked="checked">
+                                    <span></span></label>Television
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row mb">
+                            <div class="col-md-12"><label class="switch">
+                                    <input name="tir" type="checkbox" checked="checked">
+                                    <span></span></label>Tir
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="mda-form-group">
+                            <div class="mda-form-control">
+                                <textarea class="form-control" name="autre" rows="4" aria-multiline="true"></textarea>
+                                <div class="mda-form-control-line"></div>
+                                <label>Autre <span style="color: red"></span></label></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <input type="submit" class="btn btn-oval btn-raised btn-primary" value="Submit">
     </form>
 @endsection

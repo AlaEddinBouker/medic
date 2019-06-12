@@ -35,7 +35,10 @@ Route::get('/patients/add','PatientController@create');
 Route::post('/patient/store','PatientController@store');
 Route::get('/patient','PatientController@index');
 Route::get('/patient/file/{id}','PatientController@file');
-
+//End file rootes
+//Files rootes
+Route::post('/file/store','FileController@store');
+//End Files rootes
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/appointment', 'AppointmentsController@index');
