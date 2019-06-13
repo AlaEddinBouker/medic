@@ -163,10 +163,12 @@
                                     placeholder="Message"></textarea>
                             </div>
                             <div class="form-group ml-md-4">
+                                    <div class="input-wrap">
                                 Payment :
                                 <input type="radio" name="payment" value="Virrement Banquaire" class="form-check-input"
                                     selected>
                                 Virrement Banquaire
+                                    </div>
                             </div>
                         </div>
                         <input type="submit" value="Appointment" class="btn btn-secondary btn-lg btn-block py-3 px-4">

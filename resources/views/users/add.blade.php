@@ -4,6 +4,21 @@
 @endsection
 @section('content')
     <form method="post" action="{{url('/users/store')}}">
+        @if (session()->has('success_message'))
+            <div class="alert alert-success">
+                {{ session()->get('success_message') }}
+            </div>
+        @endif
+        @if(count($errors) > 0)
+            <div class="alert alert-danger">
+                <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+                </ul>
+            </div>
+        @endif
+        {{ csrf_field() }}
         <h4>Add new user</h4>
         <div class="row">
             <div class="col-sm-6">
@@ -56,7 +71,7 @@
             </div>
             <div class="col-md-6">
                 <div class="mda-form-group float-label">
-                    <div class="mda-form-control"><input type="password" name="cpassword" class="form-control"
+                    <div class="mda-form-control"><input type="password" name="password_confirmation" class="form-control"
                                                          required=""
                                                          tabindex="0"
                                                          aria-required="true" aria-invalid="true">
