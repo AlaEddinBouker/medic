@@ -36,20 +36,30 @@ Route::group(['middleware' => 'auth'], function () {
         Route::get('/roles/delete/{id}', 'RolesController@delete');
 //END ROLE ROOTES
     });
+    Route::group(['middleware' => ['role:Admin|personelle']], function () {
+        Route::get('/patient', 'PatientController@index');
+        Route::get('/patient/file/{id}', 'PatientController@file');
+        Route::post('/file/store', 'FileController@store');
+    });
+    Route::group(['middleware' => ['role:Admin']], function () {
+        Route::get('/patients/add', 'PatientController@create');
+        Route::post('/patient/store', 'PatientController@store');
+        Route::get('/file/history/{id}', 'FileController@history');
+    });
 
-    Route::get('/patients/add', 'PatientController@create');
-    Route::post('/patient/store', 'PatientController@store');
-    Route::get('/patient', 'PatientController@index');
-    Route::get('/patient/file/{id}', 'PatientController@file');
+
+
     Route::get('/patient/profile/{id}', 'PatientController@profile');
 //End file rootes
 //Files rootes
-    Route::post('/file/store', 'FileController@store');
-    Route::get('/file/history/{id}', 'FileController@history');
+
+
 //End Files rootes
     Route::get('/home', 'HomeController@index')->name('home');
+    Route::group(['middleware' => ['role:Admin']], function () {
+        Route::get('/appointment', 'AppointmentsController@index');
+        Route::post('/appointment', 'AppointmentsController@create');
+        Route::get('/appointments/show', 'AppointmentsController@show');
+    });
 
-    Route::get('/appointment', 'AppointmentsController@index');
-    Route::post('/appointment', 'AppointmentsController@create');
-    Route::get('/appointments/show', 'AppointmentsController@show');
 });
