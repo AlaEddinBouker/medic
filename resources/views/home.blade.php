@@ -24,7 +24,7 @@
                 <div class="cardbox-body pv">
                     <div class="clearfix">
                         <div class="float-left">
-                            <h4 class="m0 text-thin">{{$patients}}</h4>
+                            <h4 class="m0 text-thin">{{$patientsCount}}</h4>
                             <small class="m0 text-muted"><em class="mr-sm ion-arrow-up-b"></em>Total patients
                             </small>
                         </div>
