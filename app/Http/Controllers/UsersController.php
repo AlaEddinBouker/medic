@@ -27,12 +27,19 @@ class UsersController extends Controller
 			'LastName'	=>	'required',
             'email'	=>	'required|email',
             'password'	=>	'required|confirmed',
-            'role'	=>	'required'
+            'role'	=>	'required',
         ]);
 
         $user = new User();
         $user->name = $request->input('name');
         $user->LastName = $request->input('LastName');
+        $user->tel1 = $request->input('tel1');
+        $user->tel2 = $request->input('tel2');
+        $user->cin = $request->input('cin');
+        $user->cin = $request->input('passport');
+        $user->staus = $request->input('status');
+        $user->address = $request->input('address');
+        $user->shift = $request->input('shift');
         $user->email = $request->input('email');
         $user->password = Hash::make($request->input('password'));
         $user->save();

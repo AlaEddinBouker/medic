@@ -779,6 +779,10 @@
                     placeholder: "Selectionner une language",
                     allowClear: !0
                 }),
+                    o()("#select2-1").select2(), o()("#select2-2").select2(), o()("#select2-shift").select2(), o()("#select2-shift").select2({
+                    placeholder: "Shift type",
+                    allowClear: !0
+                }),
                     o()("#select2-1").select2(), o()("#select2-2").select2(), o()("#select2-role").select2(), o()("#select2-role").select2({
                     placeholder: "Selectionner un role",
                     allowClear: !0

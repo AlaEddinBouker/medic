@@ -259,6 +259,7 @@
     <script type="text/javascript" src="/js/vector-map.js"></script>
     <script type="text/javascript" src="/js/vendor.js"></script>
     <script type="text/javascript" src="/js/wall.js"></script>
+    <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
 
     <script type="text/javascript" src="/js/xeditable.js"></script>
     @yield('js')
