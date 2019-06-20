@@ -78,8 +78,8 @@
         <div class="sidebar-header">
             <div class="float-right pt-lg text-muted invisible"><em class="ion-close-round"></em></div>
             <a class="sidebar-header-logo" href="#">
-                <img src="/src/images/logo.png" data-svg-replace="src/images/logo.svg" alt="Logo"><span
-                        class="sidebar-header-logo-text">Bensina</span></a>
+                <img src="/src/images/logo.png" style="width: 30px; height: 30px;" alt="Logo"><span
+                        class="sidebar-header-logo-text" style="font-size:14px;">Ibn sina house care</span></a>
         </div>
         <div class="sidebar-content">
             <div class="sidebar-toolbar text-center">
@@ -208,7 +208,8 @@
                     <div class="col-lg-7 col-xl-8">
                         <form class="cardbox" editable-form="" name="user.profileForm">
 
-                            <h5 class="cardbox-heading pb0">Fiche numéro {{$f->id}}</h5>
+                            <h5 class="cardbox-heading pb0">Fiche numéro {{$f->id}}  </h5>
+                            <hr>
                             <div class="cardbox-body">
 
                                     <div class="cardbox">
@@ -315,19 +316,20 @@
                                                 <div class="cardbox-body">
                                                     <div class="row">
                                                         <div class="col-md-4">
+
                                                             <div class="row mb">
-                                                                    <div class="col-sm-8"><label class="switch">
+                                                                    <div class="col-sm-8"><label class="mda-checkbox">
                                                                 @if ($f->cream == 1)
 
                                                                         <input name="cream" type="checkbox" checked="checked" disabled>
-                                                                        <span style="background-color: #ec407a !important;"></span></label>
+                                                                                <em class="bg-red-500"></em> Créme</label>
 
                                                                 @else
                                                                         <input name="cream" type="checkbox" disabled>
                                                                         <span></span></label>
                                                                 @endif
 
-                                                                        Créme
+
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1287,6 +1289,15 @@
                                     </div>
                                 </div>
                             @endforeach
+                            @role('Admin')
+                            <div class="cardbox-footer">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <a href="{{url('/file/history/'.$patient->id)}}" class="btn btn-oval btn-primary btn-raised ">Voir tous</a>
+                                    </div>
+                                </div>
+                            </div>
+                            @endrole
                         </div>
                     </div>
                 </div>
@@ -1295,7 +1306,7 @@
 
     </main>
 
-    <footer><span>2019 - DEVROWS †</span></footer>
+    <footer><span>2019 - DEVROWS </span></footer>
     </main>
 </div>
 

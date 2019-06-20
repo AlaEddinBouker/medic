@@ -78,8 +78,8 @@
             <div class="sidebar-header">
                 <div class="float-right pt-lg text-muted invisible"><em class="ion-close-round"></em></div>
                 <a class="sidebar-header-logo" href="#">
-                    <img src="/src/images/logo.png" data-svg-replace="src/images/logo.svg" alt="Logo"><span
-                        class="sidebar-header-logo-text">Bensina</span></a>
+                    <img src="/src/images/logo.png"  style="width: 30px; height: 30px;" alt="Logo"><span
+                        class="sidebar-header-logo-text" style="font-size:14px;">Ibn sina house care</span></a>
             </div>
             <div class="sidebar-content">
                 <div class="sidebar-toolbar text-center">
@@ -200,7 +200,7 @@
                     <div class="row">
                         <div class="col-sm-9">
                             <h4 class="m0 text-thin"><span class="mr-1" data-i18n="WELCOME">Welcome
-                                    to</span><span>BENSINA dashboard</span>
+                                    to</span><span>Ibn sina house care dashboard</span>
                             </h4>
                             <small>Centre medical</small>
                         </div>

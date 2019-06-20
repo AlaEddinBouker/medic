@@ -19,6 +19,7 @@ Auth::routes();
 //user rootes
 Route::get('/users/add', 'UsersController@add')->name('add');
 Route::get('/users', 'UsersController@index');
+Route::get('/users/delete/{id}', 'UsersController@delete');
 Route::post('/users/store','UsersController@store');
 
 //end user rootes
@@ -39,6 +40,7 @@ Route::get('/patient/profile/{id}','PatientController@profile');
 //End file rootes
 //Files rootes
 Route::post('/file/store','FileController@store');
+Route::get('/file/history/{id}','FileController@history');
 //End Files rootes
 Route::get('/home', 'HomeController@index')->name('home');
 

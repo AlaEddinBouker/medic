@@ -186,9 +186,10 @@ class FileController extends Controller
      * @param \App\file $file
      * @return \Illuminate\Http\Response
      */
-    public function show(file $file)
+    public function history($id)
     {
-        //
+        $files=file::where('patient_id',$id)->get();
+        return view('files.index',compact('files'));
     }
 
     /**

@@ -50,4 +50,17 @@ class User extends Authenticatable
     {
         return $this->hasOne('App\Patient');
     }
+    function userinfo($id)
+    {
+       $user=User::where('id',$id)->first();
+       if($user==null)
+       {
+           return 'Accune utilisateur';
+       }else{
+           $name=$user->name.' '.$user->lastName;
+           return $name;
+       }
+
+    }
+
 }

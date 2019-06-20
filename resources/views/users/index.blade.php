@@ -30,7 +30,7 @@
     </div>
 @endsection--}}
 @section('content')
-    <table class="table">
+    <table class="table-datatable table table-striped table-hover mv-lg" id="datatable1">
         <thead>
         <tr>
             <th>#ID</th>
@@ -57,9 +57,29 @@
                        class="mb-2 mr-2 btn btn-oval btn-raised btn-success ripple">Edit </a>
                     <!-- Button trigger modal -->
                     <button class="mb-2 mr-2 btn btn-oval btn-raised btn-danger ripple" data-toggle="modal"
-                            data-target="#mymodal}">
+                            data-target="#mymodal{{$user->id}}">
                         delete
                     </button>
+                    <div class="modal fade" id="mymodal{{$user->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Delete {{$user->name}}</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    Are you sure that you want to delete " {{$user->name}} " ?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn  btn-oval  btn-raised btn-secondary ripple" data-dismiss="modal">Close</button>
+                                    <a  href="{{url('/users/delete/'.$user->id)}}" class="btn btn-oval btn-raised btn-danger " style="color: white;">Delete
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </td>
             </tr>
         @endforeach

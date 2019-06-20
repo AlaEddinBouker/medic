@@ -38,6 +38,12 @@ class UsersController extends Controller
         $user->save();
         $user->attachRole($request->input('role'));
 
-        return redirect()->back()->with('success_message', 'We successfully recieved your message!');
+        return redirect()->back()->with('success_message', 'User was added successfully');
+    }
+    public function delete(Request $request)
+    {
+
+        User::where('id',$request['id'])->delete();
+        return redirect()->back()->with('success_message', 'User was deleted successfully');
     }
 }
