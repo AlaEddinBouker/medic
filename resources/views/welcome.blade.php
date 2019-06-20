@@ -101,56 +101,7 @@
       </div>
     </section>
 
-    <section class="ftco-services ftco-no-pb">
-			<div class="container">
-				<div class="row no-gutters">
-          <div class="col-md-3 d-flex services align-self-stretch p-4 ftco-animate">
-            <div class="media block-6 d-block text-center">
-              <div class="icon d-flex justify-content-center align-items-center">
-            		<span class="flaticon-doctor"></span>
-              </div>
-              <div class="media-body p-2 mt-3">
-                <h3 class="heading">Qualitfied Doctors</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 d-flex services align-self-stretch p-4 ftco-animate">
-            <div class="media block-6 d-block text-center">
-              <div class="icon d-flex justify-content-center align-items-center">
-            		<span class="flaticon-ambulance"></span>
-              </div>
-              <div class="media-body p-2 mt-3">
-                <h3 class="heading">Emergency Care</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 d-flex services align-self-stretch p-4 ftco-animate">
-            <div class="media block-6 d-block text-center">
-              <div class="icon d-flex justify-content-center align-items-center">
-            		<span class="flaticon-stethoscope"></span>
-              </div>
-              <div class="media-body p-2 mt-3">
-                <h3 class="heading">Outdoor Checkup</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 d-flex services align-self-stretch p-4 ftco-animate">
-            <div class="media block-6 d-block text-center">
-              <div class="icon d-flex justify-content-center align-items-center">
-            		<span class="flaticon-24-hours"></span>
-              </div>
-              <div class="media-body p-2 mt-3">
-                <h3 class="heading">24 Hours Service</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-			</div>
-		</section>
+
 
 		<section class="ftco-section ftco-no-pt ftc-no-pb">
 			<div class="container">
@@ -160,50 +111,81 @@
 					<div class="col-md-7 wrap-about py-4 py-md-5 ftco-animate">
 	          <div class="heading-section mb-5">
 	          	<div class="pl-md-5 ml-md-5">
-		          	<span class="subheading">About Dr.care</span>
-		            <h2 class="mb-4" style="font-size: 28px;">Medical specialty concerned with the care of acutely ill hospitalized patients</h2>
+		          	<span class="subheading">Présentation de la residence</span>
+		            <h2 class="mb-4" style="font-size: 28px;">« Ibn Sina House Care »</h2>
 	            </div>
 	          </div>
 	          <div class="pl-md-5 ml-md-5 mb-5">
-							<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word.</p>
-							<div class="row mt-5 pt-2">
-								<div class="col-lg-6">
-									<div class="services-2 d-flex">
-										<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-first-aid-kit"></span></div>
-										<div class="text">
-											<h3>Primary Care</h3>
-											<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-6">
-									<div class="services-2 d-flex">
-										<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-dropper"></span></div>
-										<div class="text">
-											<h3>Lab Test</h3>
-											<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-6">
-									<div class="services-2 d-flex">
-										<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-experiment-results"></span></div>
-										<div class="text">
-											<h3>Symptom Check</h3>
-											<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-6">
-									<div class="services-2 d-flex">
-										<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-heart-rate"></span></div>
-										<div class="text">
-											<h3>Heart Rate</h3>
-											<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
-										</div>
-									</div>
-								</div>
-							</div>
+							<p>est un opérateur spécialisé dans la prise en charge des personnes
+                                âgées étrangères. Notre résidence est un lieu de vie, de vacances et de soins pour les
+                                personnes qui mérite un atmosphère de détente après leurs retraites offrant un service
+                                d&#39;hôtellerie de haute gamme.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+        </section>
+
+        <section class="ftco-section ftco-no-pt ftc-no-pb">
+			<div class="container">
+				<div class="row no-gutters">
+					<div class="col-md-5 p-md-5 img img-2 mt-5 mt-md-0" style="background-image: url(images/about.jpg);">
+					</div>
+					<div class="col-md-7 wrap-about py-4 py-md-5 ftco-animate">
+	          <div class="heading-section mb-5">
+	          	<div class="pl-md-5 ml-md-5">
+		          	<span class="subheading">Cadre d’hébergement</span>
+	            </div>
+	          </div>
+	          <div class="pl-md-5 ml-md-5 mb-5">
+							<p>Notre résidence médicalisée dispose de chambres et de suites, confortables et spacieuses,
+                                disposant toutes d’un balcon ainsi que d’une vue sur mer inspirante, sur le jardin bien ou sur
+                                la piscine.</p>
+                            <p>Nos résidents ont à leur disposition un service hôtelier prestigieux et privilégié (salons,
+                                jardins, salle de cinéma et de spectacle, piscine intérieure d’eau douce chauffée, piscine
+                                intérieure et extérieure…), ainsi que divers services de soins (coiffeur, pédicure,
+                                esthéticienne (Thalasso intégrée à la résidence)</p>
+                            <p>Un programme d’animation varié et bien sûr, une équipe médicale (Médecins, Infirmiers,
+                                Psychologue kinésithérapeutes, diététicienne…).</p>
+						</div>
+					</div>
+				</div>
+			</div>
+        </section>
+
+        <section class="ftco-section ftco-no-pt ftc-no-pb">
+			<div class="container">
+				<div class="row no-gutters">
+					<div class="col-md-5 p-md-5 img img-2 mt-5 mt-md-0" style="background-image: url(images/about.jpg);">
+					</div>
+					<div class="col-md-7 wrap-about py-4 py-md-5 ftco-animate">
+	          <div class="heading-section mb-5">
+	          	<div class="pl-md-5 ml-md-5">
+		          	<span class="subheading">Dossier informatisé des résidents</span>
+	            </div>
+	          </div>
+	          <div class="pl-md-5 ml-md-5 mb-5">
+							<p>Grâce à notre application disponible pour smartphone, tablette, et ordinateur, les membres de familles des résidents peuvent suivre les mises à jour de l’état de santé de son parent (température, tension, poids, glycémie, etc), aussi les soins, évènements et suivi alimentaire ainsi que le nom de la responsable ayant réalisée l’action. Sur cette interface sécurisée, les familles peuvent également utiliser la boîte de dialogue pour interagir avec la résidence et le personnel de santé et en plus visionner les photos et vidéos prises lors des activités.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+        </section>
+
+        <section class="ftco-section ftco-no-pt ftc-no-pb">
+			<div class="container">
+				<div class="row no-gutters">
+					<div class="col-md-5 p-md-5 img img-2 mt-5 mt-md-0" style="background-image: url(images/about.jpg);">
+					</div>
+					<div class="col-md-7 wrap-about py-4 py-md-5 ftco-animate">
+	          <div class="heading-section mb-5">
+	          	<div class="pl-md-5 ml-md-5">
+		          	<span class="subheading">Quel climat fait-il à la résidence ?</span>
+	            </div>
+	          </div>
+	          <div class="pl-md-5 ml-md-5 mb-5">
+                            <p>Un Climat méditerranéen avec 300 Jours de Soleil par An</p>
+                            <p>Riche d’une longue tradition médicale, et classée en 2009 au 27e rang mondial sur le critère de la santé par le rapport de Davos, la Tunisie se positionne aujourd’hui comme une destination phare de santé et de bien-être. </p>
 						</div>
 					</div>
 				</div>
@@ -215,12 +197,12 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-9">
-						<h2>We Provide Free Health Care Consultation</h2>
+						<h2>We Provide Health Care Consultation</h2>
 						<p class="mb-0">Your Health is Our Top Priority with Comprehensive, Affordable medical.</p>
 						<p></p>
 					</div>
 					<div class="col-md-3 d-flex align-items-center">
-						<p class="mb-0"><a href="#" class="btn btn-secondary px-4 py-3">Free Consutation</a></p>
+						<p class="mb-0"><a href="#" class="btn btn-secondary px-4 py-3">Consutation</a></p>
 					</div>
 				</div>
 			</div>
@@ -230,24 +212,18 @@
     	<div class="container">
     		<div class="row justify-content-center mb-5 pb-2">
           <div class="col-md-8 text-center heading-section ftco-animate">
-          	<span class="subheading">Departments</span>
-            <h2 class="mb-4">Clinic Departments</h2>
-            <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
+          	<span class="subheading">Qualité</span>
           </div>
         </div>
     		<div class="ftco-departments">
 					<div class="row">
             <div class="col-md-12 nav-link-wrap">
 	            <div class="nav nav-pills d-flex text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-	              <a class="nav-link ftco-animate active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">Neurology</a>
+	              <a class="nav-link ftco-animate active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">Prestation medicale</a>
 
-	              <a class="nav-link ftco-animate" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">Surgical</a>
+	              <a class="nav-link ftco-animate" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">Prestation de bien-être</a>
 
-	              <a class="nav-link ftco-animate" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab" aria-controls="v-pills-3" aria-selected="false">Dental</a>
-
-	              <a class="nav-link ftco-animate" id="v-pills-4-tab" data-toggle="pill" href="#v-pills-4" role="tab" aria-controls="v-pills-4" aria-selected="false">Ophthalmology</a>
-
-	              <a class="nav-link ftco-animate" id="v-pills-5-tab" data-toggle="pill" href="#v-pills-5" role="tab" aria-controls="v-pills-5" aria-selected="false">Cardiology</a>
+	              <a class="nav-link ftco-animate" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab" aria-controls="v-pills-3" aria-selected="false">Prestation hôtellerie et services</a>
 
 	            </div>
 	          </div>
@@ -261,42 +237,24 @@
 	              			<div class="img d-flex align-self-stretch" style="background-image: url(images/dept-1.jpg);"></div>
 	              		</div>
 	              		<div class="col-lg-8">
-	              			<h2>Neurological Deparments</h2>
-	              			<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word.</p>
 											<div class="row mt-5 pt-2">
-												<div class="col-lg-6">
+												<div class="col-lg-12">
 													<div class="services-2 d-flex">
 														<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-first-aid-kit"></span></div>
 														<div class="text">
-															<h3>Primary Care</h3>
-															<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+															<h3>Prise en charge quotidienne </h3>
+                                                            <p>Le personnel de notre résidence fait de son mieux chaque jour pour répondre aux besoins de ses résidents et la disponibilité d'un personnel nombreux et expérimenté garantit une qualité de soins unique.</p>
+                                                            <p>L'équipe médicale est responsable des soins médicaux quotidiens des résidents.</p>
 														</div>
 													</div>
 												</div>
-												<div class="col-lg-6">
+												<div class="col-lg-12">
 													<div class="services-2 d-flex">
 														<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-dropper"></span></div>
 														<div class="text">
-															<h3>Lab Test</h3>
-															<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
-														</div>
-													</div>
-												</div>
-												<div class="col-lg-6">
-													<div class="services-2 d-flex">
-														<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-experiment-results"></span></div>
-														<div class="text">
-															<h3>Symptom Check</h3>
-															<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
-														</div>
-													</div>
-												</div>
-												<div class="col-lg-6">
-													<div class="services-2 d-flex">
-														<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-heart-rate"></span></div>
-														<div class="text">
-															<h3>Heart Rate</h3>
-															<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+															<h3>Nourriture</h3>
+                                                            <p>Puisque le plaisir vient du goût, tous les repas sont offerts aux résidents par la résidence (petit-déjeuner, déjeuner, goûter, dîner). Ils sont servis dans les restaurants de l'hôtel ou dans la chambre.</p>
+                                                            <p>D'autant que les repas sont préparés tous les jours sur place par notre chef et avec des produits frais.</p>
 														</div>
 													</div>
 												</div>
@@ -311,42 +269,24 @@
 	              			<div class="img d-flex align-self-stretch" style="background-image: url(images/dept-2.jpg);"></div>
 	              		</div>
 	              		<div class="col-md-8">
-	              			<h2>Surgical Deparments</h2>
-	              			<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word.</p>
 											<div class="row mt-5 pt-2">
-												<div class="col-lg-6">
+												<div class="col-lg-12">
 													<div class="services-2 d-flex">
 														<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-first-aid-kit"></span></div>
 														<div class="text">
-															<h3>Primary Care</h3>
-															<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+															<h3>Plage privée</h3>
+															<p>Profitez d'une plage de sable fin, d'une piscine d'eau douce extérieure et intérieure et d'un jardin aussi beau et plaisant à l’oeil. </p>
 														</div>
 													</div>
 												</div>
-												<div class="col-lg-6">
+												<div class="col-lg-12">
 													<div class="services-2 d-flex">
 														<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-dropper"></span></div>
 														<div class="text">
-															<h3>Lab Test</h3>
-															<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
-														</div>
-													</div>
-												</div>
-												<div class="col-lg-6">
-													<div class="services-2 d-flex">
-														<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-experiment-results"></span></div>
-														<div class="text">
-															<h3>Symptom Check</h3>
-															<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
-														</div>
-													</div>
-												</div>
-												<div class="col-lg-6">
-													<div class="services-2 d-flex">
-														<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-heart-rate"></span></div>
-														<div class="text">
-															<h3>Heart Rate</h3>
-															<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+															<h3>Centre de Thalasso</h3>
+                                                            <p>Dans une ambiance alliant tradition et modernité, le centre de thalassothérapie intégré à l'hôtel vous accueille et vous permet de garder la forme dans notre salle de sport spécialement conçue pour les seniors.</p>
+                                                            <p>Ce dernier propose des soins haut de gamme, hammam, sauna, salle de relaxation, salon de coiffure et bien plus encore.</p>
+                                                            <p>Soins des cheveux: Les cheveux, la manucure et la pédicure sont fournis gratuitement à tous les résidents.</p>
 														</div>
 													</div>
 												</div>
@@ -360,42 +300,40 @@
 	              			<div class="img d-flex align-self-stretch" style="background-image: url(images/dept-3.jpg);"></div>
 	              		</div>
 	              		<div class="col-md-8">
-	              			<h2>Dental Deparments</h2>
-	              			<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word.</p>
 											<div class="row mt-5 pt-2">
-												<div class="col-lg-6">
+												<div class="col-lg-12">
 													<div class="services-2 d-flex">
 														<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-first-aid-kit"></span></div>
 														<div class="text">
-															<h3>Primary Care</h3>
-															<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+															<h3>La chambre</h3>
+															<p>Lumineuses et spacieuses, l’ensemble des chambres et suites disposent de balcons. Une magnifique vue sur mer, jardin ou sur la piscine. Les chambres de la résidence médicalisée sont équipées d’une salle de bains avec baignoire/douche ainsi que des toilettes séparées.</p>
 														</div>
 													</div>
 												</div>
-												<div class="col-lg-6">
+												<div class="col-lg-12">
 													<div class="services-2 d-flex">
 														<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-dropper"></span></div>
 														<div class="text">
-															<h3>Lab Test</h3>
-															<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+															<h3>L’accompagnement</h3>
+															<p>Chaque résident(e) est accompagné en permanence par une aide-soignante et ceci 24H/24.</p>
 														</div>
 													</div>
 												</div>
-												<div class="col-lg-6">
+												<div class="col-lg-12">
 													<div class="services-2 d-flex">
 														<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-experiment-results"></span></div>
 														<div class="text">
-															<h3>Symptom Check</h3>
-															<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+															<h3>Activités</h3>
+															<p>De nombreuses activités sont proposées pour les résidents : Salle de Spectacle, Cinéma, Jardin thérapeutique … toutes, d’ordre manuel, ludique, ou intellectuel.</p>
 														</div>
 													</div>
 												</div>
-												<div class="col-lg-6">
+												<div class="col-lg-12">
 													<div class="services-2 d-flex">
 														<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-heart-rate"></span></div>
 														<div class="text">
-															<h3>Heart Rate</h3>
-															<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+															<h3>Lavage du linge</h3>
+															<p>Pour une offre encore plus complète, nous proposons un service de blanchisserie au sein même de la maison de retraite pour s’occuper du linge, et ce, à titre gracieux.</p>
 														</div>
 													</div>
 												</div>
@@ -404,105 +342,7 @@
 	              	</div>
 	              </div>
 
-	              <div class="tab-pane fade" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-day-4-tab">
-	              	<div class="row departments">
-	              		<div class="col-lg-4 order-lg-last d-flex align-items-stretch">
-	              			<div class="img d-flex align-self-stretch" style="background-image: url(images/dept-4.jpg);"></div>
-	              		</div>
-	              		<div class="col-md-8">
-	              			<h2>Ophthalmology Deparments</h2>
-	              			<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word.</p>
-											<div class="row mt-5 pt-2">
-												<div class="col-lg-6">
-													<div class="services-2 d-flex">
-														<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-first-aid-kit"></span></div>
-														<div class="text">
-															<h3>Primary Care</h3>
-															<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
-														</div>
-													</div>
-												</div>
-												<div class="col-lg-6">
-													<div class="services-2 d-flex">
-														<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-dropper"></span></div>
-														<div class="text">
-															<h3>Lab Test</h3>
-															<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
-														</div>
-													</div>
-												</div>
-												<div class="col-lg-6">
-													<div class="services-2 d-flex">
-														<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-experiment-results"></span></div>
-														<div class="text">
-															<h3>Symptom Check</h3>
-															<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
-														</div>
-													</div>
-												</div>
-												<div class="col-lg-6">
-													<div class="services-2 d-flex">
-														<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-heart-rate"></span></div>
-														<div class="text">
-															<h3>Heart Rate</h3>
-															<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
-														</div>
-													</div>
-												</div>
-											</div>
-	              		</div>
-	              	</div>
-	              </div>
 
-	              <div class="tab-pane fade" id="v-pills-5" role="tabpanel" aria-labelledby="v-pills-day-5-tab">
-	              	<div class="row departments">
-	              		<div class="col-lg-4 order-lg-last d-flex align-items-stretch">
-	              			<div class="img d-flex align-self-stretch" style="background-image: url(images/dept-5.jpg);"></div>
-	              		</div>
-	              		<div class="col-md-8">
-	              			<h2>Cardiology Deparments</h2>
-	              			<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word.</p>
-											<div class="row mt-5 pt-2">
-												<div class="col-md-6">
-													<div class="services-2 d-flex">
-														<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-idea"></span></div>
-														<div class="text">
-															<h3>Primary Care</h3>
-															<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
-														</div>
-													</div>
-												</div>
-												<div class="col-md-6">
-													<div class="services-2 d-flex">
-														<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-idea"></span></div>
-														<div class="text">
-															<h3>Lab Test</h3>
-															<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
-														</div>
-													</div>
-												</div>
-												<div class="col-md-6">
-													<div class="services-2 d-flex">
-														<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-idea"></span></div>
-														<div class="text">
-															<h3>Symptom Check</h3>
-															<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
-														</div>
-													</div>
-												</div>
-												<div class="col-md-6">
-													<div class="services-2 d-flex">
-														<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-idea"></span></div>
-														<div class="text">
-															<h3>Heart Rate</h3>
-															<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
-														</div>
-													</div>
-												</div>
-											</div>
-	              		</div>
-	              	</div>
-	              </div>
 	            </div>
 	          </div>
 	        </div>
@@ -510,448 +350,6 @@
     	</div>
     </section>
 
-		<section class="ftco-section ftco-no-pt">
-			<div class="container">
-				<div class="row justify-content-center mb-5 pb-2">
-          <div class="col-md-8 text-center heading-section ftco-animate">
-          	<span class="subheading">Doctors</span>
-            <h2 class="mb-4">Our Qualified Doctors</h2>
-            <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
-          </div>
-        </div>
-				<div class="row">
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff">
-							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(images/doc-1.jpg);"></div>
-							</div>
-							<div class="text pt-3 text-center">
-								<h3>Dr. Lloyd Wilson</h3>
-								<span class="position mb-2">Neurologist</span>
-								<div class="faded">
-									<p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-									<ul class="ftco-social text-center">
-		                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-		              </ul>
-	              </div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff">
-							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(images/doc-2.jpg);"></div>
-							</div>
-							<div class="text pt-3 text-center">
-								<h3>Dr. Rachel Parker</h3>
-								<span class="position mb-2">Ophthalmologist</span>
-								<div class="faded">
-									<p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-									<ul class="ftco-social text-center">
-		                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-		              </ul>
-	              </div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff">
-							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(images/doc-3.jpg);"></div>
-							</div>
-							<div class="text pt-3 text-center">
-								<h3>Dr. Ian Smith</h3>
-								<span class="position mb-2">Dentist</span>
-								<div class="faded">
-									<p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-									<ul class="ftco-social text-center">
-		                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-		              </ul>
-	              </div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff">
-							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(images/doc-4.jpg);"></div>
-							</div>
-							<div class="text pt-3 text-center">
-								<h3>Dr. Alicia Henderson</h3>
-								<span class="position mb-2">Pediatrician</span>
-								<div class="faded">
-									<p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-									<ul class="ftco-social text-center">
-		                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-		              </ul>
-	              </div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-    <section class="ftco-section testimony-section bg-light">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-2">
-          <div class="col-md-8 text-center heading-section ftco-animate">
-          	<span class="subheading">Testimonials</span>
-            <h2 class="mb-4">Our Patients Says About Us</h2>
-            <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
-          </div>
-        </div>
-        <div class="row ftco-animate justify-content-center">
-          <div class="col-md-8">
-            <div class="carousel-testimony owl-carousel">
-              <div class="item">
-                <div class="testimony-wrap d-flex">
-                  <div class="user-img mr-4" style="background-image: url(images/person_1.jpg)">
-                  </div>
-                  <div class="text ml-2 bg-light">
-                  	<span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Racky Henderson</p>
-                    <span class="position">Farmer</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap d-flex">
-                  <div class="user-img mr-4" style="background-image: url(images/person_2.jpg)">
-                  </div>
-                  <div class="text ml-2 bg-light">
-                  	<span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Henry Dee</p>
-                    <span class="position">Businessman</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap d-flex">
-                  <div class="user-img mr-4" style="background-image: url(images/person_3.jpg)">
-                  </div>
-                  <div class="text ml-2 bg-light">
-                  	<span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Mark Huff</p>
-                    <span class="position">Students</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap d-flex">
-                  <div class="user-img mr-4" style="background-image: url(images/person_4.jpg)">
-                  </div>
-                  <div class="text ml-2 bg-light">
-                  	<span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Rodel Golez</p>
-                    <span class="position">Striper</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap d-flex">
-                  <div class="user-img mr-4" style="background-image: url(images/person_1.jpg)">
-                  </div>
-                  <div class="text ml-2 bg-light">
-                  	<span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Ken Bosh</p>
-                    <span class="position">Manager</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter" style="background-image: url(images/bg_3.jpg);" data-stellar-background-ratio="0.5">
-    	<div class="container">
-    		<div class="row">
-    			<div class="col-md-6 py-5 pr-md-5">
-	          <div class="heading-section heading-section-white ftco-animate mb-5">
-	          	<span class="subheading">Consultation</span>
-	            <h2 class="mb-4">Free Consultation</h2>
-	            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-	          </div>
-	          <form action="#" class="appointment-form ftco-animate">
-	    				<div class="d-md-flex">
-		    				<div class="form-group">
-		    					<input type="text" class="form-control" placeholder="First Name">
-		    				</div>
-		    				<div class="form-group ml-md-4">
-		    					<input type="text" class="form-control" placeholder="Last Name">
-		    				</div>
-	    				</div>
-	    				<div class="d-md-flex">
-	    					<div class="form-group">
-		    					<div class="form-field">
-          					<div class="select-wrap">
-                      <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-                      <select name="" id="" class="form-control">
-                      	<option value="">Select Your Services</option>
-                        <option value="">Neurology</option>
-                        <option value="">Cardiology</option>
-                        <option value="">Dental</option>
-                        <option value="">Ophthalmology</option>
-                        <option value="">Other Services</option>
-                      </select>
-                    </div>
-		              </div>
-		    				</div>
-	    					<div class="form-group ml-md-4">
-		    					<input type="text" class="form-control" placeholder="Phone">
-		    				</div>
-	    				</div>
-	    				<div class="d-md-flex">
-		    				<div class="form-group">
-		    					<div class="input-wrap">
-		            		<div class="icon"><span class="ion-md-calendar"></span></div>
-		            		<input type="text" class="form-control appointment_date" placeholder="Date">
-	            		</div>
-		    				</div>
-		    				<div class="form-group ml-md-4">
-		    					<div class="input-wrap">
-		            		<div class="icon"><span class="ion-ios-clock"></span></div>
-		            		<input type="text" class="form-control appointment_time" placeholder="Time">
-	            		</div>
-		    				</div>
-	    				</div>
-	    				<div class="d-md-flex">
-	    					<div class="form-group">
-		              <textarea name="" id="" cols="30" rows="2" class="form-control" placeholder="Message"></textarea>
-		            </div>
-		            <div class="form-group ml-md-4">
-		              <input type="submit" value="Appointment" class="btn btn-secondary py-3 px-4">
-		            </div>
-	    				</div>
-	    			</form>
-    			</div>
-    			<div class="col-lg-6 p-5 bg-counter aside-stretch">
-						<h3 class="vr">About Dr.Care Facts</h3>
-    				<div class="row pt-4 mt-1">
-		          <div class="col-md-6 d-flex justify-content-center counter-wrap ftco-animate">
-		            <div class="block-18 p-5 bg-light">
-		              <div class="text">
-		                <strong class="number" data-number="30">0</strong>
-		                <span>Years of Experienced</span>
-		              </div>
-		            </div>
-		          </div>
-		          <div class="col-md-6 d-flex justify-content-center counter-wrap ftco-animate">
-		            <div class="block-18 p-5 bg-light">
-		              <div class="text">
-		                <strong class="number" data-number="4500">0</strong>
-		                <span>Happy Patients</span>
-		              </div>
-		            </div>
-		          </div>
-		          <div class="col-md-6 d-flex justify-content-center counter-wrap ftco-animate">
-		            <div class="block-18 p-5 bg-light">
-		              <div class="text">
-		                <strong class="number" data-number="84">0</strong>
-		                <span>Number of Doctors</span>
-		              </div>
-		            </div>
-		          </div>
-		          <div class="col-md-6 d-flex justify-content-center counter-wrap ftco-animate">
-		            <div class="block-18 p-5 bg-light">
-		              <div class="text">
-		                <strong class="number" data-number="300">0</strong>
-		                <span>Number of Staffs</span>
-		              </div>
-		            </div>
-		          </div>
-	          </div>
-          </div>
-        </div>
-    	</div>
-    </section>
-
-    <section class="ftco-section bg-light">
-    	<div class="container">
-    		<div class="row justify-content-center mb-5 pb-2">
-          <div class="col-md-8 text-center heading-section ftco-animate">
-          	<span class="subheading">Pricing</span>
-            <h2 class="mb-4">Our Pricing</h2>
-            <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
-          </div>
-        </div>
-    		<div class="row">
-        	<div class="col-md-3 ftco-animate">
-        		<div class="pricing-entry pb-5 text-center">
-        			<div>
-	        			<h3 class="mb-4">Basic</h3>
-	        			<p><span class="price">$24.50</span> <span class="per">/ session</span></p>
-	        		</div>
-        			<ul>
-        				<li>Diagnostic Services</li>
-								<li>Professional Consultation</li>
-								<li>Tooth Implants</li>
-								<li>Surgical Extractions</li>
-								<li>Teeth Whitening</li>
-        			</ul>
-        			<p class="button text-center"><a href="#" class="btn btn-primary px-4 py-3">Get Offer</a></p>
-        		</div>
-        	</div>
-        	<div class="col-md-3 ftco-animate">
-        		<div class="pricing-entry pb-5 text-center">
-        			<div>
-	        			<h3 class="mb-4">Standard</h3>
-	        			<p><span class="price">$34.50</span> <span class="per">/ session</span></p>
-	        		</div>
-        			<ul>
-        				<li>Diagnostic Services</li>
-								<li>Professional Consultation</li>
-								<li>Tooth Implants</li>
-								<li>Surgical Extractions</li>
-								<li>Teeth Whitening</li>
-        			</ul>
-        			<p class="button text-center"><a href="#" class="btn btn-primary px-4 py-3">Get Offer</a></p>
-        		</div>
-        	</div>
-        	<div class="col-md-3 ftco-animate">
-        		<div class="pricing-entry active pb-5 text-center">
-        			<div>
-	        			<h3 class="mb-4">Premium</h3>
-	        			<p><span class="price">$54.50</span> <span class="per">/ session</span></p>
-	        		</div>
-        			<ul>
-        				<li>Diagnostic Services</li>
-								<li>Professional Consultation</li>
-								<li>Tooth Implants</li>
-								<li>Surgical Extractions</li>
-								<li>Teeth Whitening</li>
-        			</ul>
-        			<p class="button text-center"><a href="#" class="btn btn-primary px-4 py-3">Get Offer</a></p>
-        		</div>
-        	</div>
-        	<div class="col-md-3 ftco-animate">
-        		<div class="pricing-entry pb-5 text-center">
-        			<div>
-	        			<h3 class="mb-4">Platinum</h3>
-	        			<p><span class="price">$89.50</span> <span class="per">/ session</span></p>
-	        		</div>
-        			<ul>
-        				<li>Diagnostic Services</li>
-								<li>Professional Consultation</li>
-								<li>Tooth Implants</li>
-								<li>Surgical Extractions</li>
-								<li>Teeth Whitening</li>
-        			</ul>
-        			<p class="button text-center"><a href="#" class="btn btn-primary px-4 py-3">Get Offer</a></p>
-        		</div>
-        	</div>
-        </div>
-    	</div>
-    </section>
-
-		<section class="ftco-section bg-light">
-			<div class="container">
-				<div class="row justify-content-center mb-5 pb-2">
-          <div class="col-md-8 text-center heading-section ftco-animate">
-          	<span class="subheading">Blog</span>
-            <h2 class="mb-4">Recent Blog</h2>
-            <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
-          </div>
-        </div>
-				<div class="row">
-          <div class="col-md-4 ftco-animate">
-            <div class="blog-entry">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
-								<div class="meta-date text-center p-2">
-                  <span class="day">23</span>
-                  <span class="mos">January</span>
-                  <span class="yr">2019</span>
-                </div>
-              </a>
-              <div class="text bg-white p-4">
-                <h3 class="heading"><a href="#">Scary Thing That You Don’t Get Enough Sleep</a></h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <div class="d-flex align-items-center mt-4">
-	                <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
-	                <p class="ml-auto mb-0">
-	                	<a href="#" class="mr-2">Admin</a>
-	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-	                </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 ftco-animate">
-            <div class="blog-entry">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
-								<div class="meta-date text-center p-2">
-                  <span class="day">23</span>
-                  <span class="mos">January</span>
-                  <span class="yr">2019</span>
-                </div>
-              </a>
-              <div class="text bg-white p-4">
-                <h3 class="heading"><a href="#">Scary Thing That You Don’t Get Enough Sleep</a></h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <div class="d-flex align-items-center mt-4">
-	                <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
-	                <p class="ml-auto mb-0">
-	                	<a href="#" class="mr-2">Admin</a>
-	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-	                </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 ftco-animate">
-            <div class="blog-entry">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
-								<div class="meta-date text-center p-2">
-                  <span class="day">23</span>
-                  <span class="mos">January</span>
-                  <span class="yr">2019</span>
-                </div>
-              </a>
-              <div class="text bg-white p-4">
-                <h3 class="heading"><a href="#">Scary Thing That You Don’t Get Enough Sleep</a></h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <div class="d-flex align-items-center mt-4">
-	                <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
-	                <p class="ml-auto mb-0">
-	                	<a href="#" class="mr-2">Admin</a>
-	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-	                </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-			</div>
-		</section>
 
 
     <footer class="ftco-footer ftco-bg-dark ftco-section">
@@ -1048,8 +446,8 @@
           <div class="col-md-12 text-center">
 
             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+  Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | Crafted By Devrows.</a>
+</p>
           </div>
         </div>
       </div>
