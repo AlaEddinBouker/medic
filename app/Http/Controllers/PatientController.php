@@ -138,8 +138,14 @@ class PatientController extends Controller
         $patient=Patient::where('id',$id)->first();
 
         $f=file::where('patient_id',$id)->orderBy('created_at', 'desc')->first();
-        $files=file::where('patient_id',$id)->orderBy('created_at', 'desc')->get();
-        $user=User::where('id',$f->user_id)->first();
-        return view('patient.profile',compact('patient','f','files','user'));
+        if($f==null)
+        {
+            return back();
+        }else{
+            $files=file::where('patient_id',$id)->orderBy('created_at', 'desc')->take(10)->get();;
+            $user=User::where('id',$f->user_id)->first();
+            return view('patient.profile',compact('patient','f','files','user'));
+        }
+
     }
 }

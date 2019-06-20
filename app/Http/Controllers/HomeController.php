@@ -30,6 +30,7 @@ class HomeController extends Controller
         $patients=Patient::count();
         $users=User::all();
         $personells=DB::table('role_user')->where('role_id',5)->count();
+        $patients=Patient::all();
 
         return view('home',compact('users','patients','personells','usersCount'));
     }

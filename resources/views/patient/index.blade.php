@@ -38,9 +38,10 @@
                            class="mb-2 mr-2 btn btn-oval btn-raised btn-primary ripple">Profile </a>
                         <a href="{{url('patient/file/'.$patient->id)}}"
                            class="mb-2 mr-2 btn btn-oval btn-raised btn-success ripple">File </a>
+                        @role('Admin')
                         <a href=""
                            class="mb-2 mr-2 btn btn-oval btn-raised btn-danger ripple">Delete </a>
-
+                        @endrole
                     </td>
                 </tr>
             @endforeach

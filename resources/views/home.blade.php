@@ -86,7 +86,8 @@
                             data-target="#mymodal{{$user->id}}">
                         delete
                     </button>
-                    <div class="modal fade" id="mymodal{{$user->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="mymodal{{$user->id}}" tabindex="-1" role="dialog"
+                         aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -99,8 +100,11 @@
                                     Are you sure that you want to delete " {{$user->name}} " ?
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn  btn-oval  btn-raised btn-secondary ripple" data-dismiss="modal">Close</button>
-                                    <a  href="{{url('/users/delete/'.$user->id)}}" class="btn btn-oval btn-raised btn-danger " style="color: white;">Delete
+                                    <button type="button" class="btn  btn-oval  btn-raised btn-secondary ripple"
+                                            data-dismiss="modal">Close
+                                    </button>
+                                    <a href="{{url('/users/delete/'.$user->id)}}"
+                                       class="btn btn-oval btn-raised btn-danger " style="color: white;">Delete
                                     </a>
                                 </div>
                             </div>
@@ -111,5 +115,39 @@
         @endforeach
         </tbody>
     </table>
+    @endrole
+    @role('personelle')
+    <div class="table-responsive">
+        <table class="table-datatable table table-striped table-hover mv-lg" id="datatable1">
+            <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Numéro de chambre</th>
+                <th class="sort-numeric"></th>
+
+            </tr>
+            </thead>
+            <tbody>
+            @foreach($patients as $patient)
+                <tr>
+                    <td>{{$patient->nom}}</td>
+                    <td>{{$patient->prenom}}</td>
+                    <td>{{$patient->room}}</td>
+                    <td>
+                        <a href="{{url('/patient/profile/'.$patient->id)}}"
+                           class="mb-2 mr-2 btn btn-oval btn-raised btn-primary ripple">Profile </a>
+                        <a href="{{url('patient/file/'.$patient->id)}}"
+                           class="mb-2 mr-2 btn btn-oval btn-raised btn-success ripple">File </a>
+                        @role('Admin')
+                        <a href=""
+                           class="mb-2 mr-2 btn btn-oval btn-raised btn-danger ripple">Delete </a>
+                        @endrole
+                    </td>
+                </tr>
+            @endforeach
+            </tbody>
+        </table>
+    </div>
     @endrole
 @endsection

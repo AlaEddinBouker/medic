@@ -16,34 +16,40 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-//user rootes
-Route::get('/users/add', 'UsersController@add')->name('add');
-Route::get('/users', 'UsersController@index');
-Route::get('/users/delete/{id}', 'UsersController@delete');
-Route::post('/users/store','UsersController@store');
+Route::group(['middleware' => 'auth'], function () {
+
+    Route::group(['middleware' => ['role:Admin']], function () {
+        //user rootes
+        Route::get('/users/add', 'UsersController@add')->name('add');
+        Route::get('/users', 'UsersController@index');
+        Route::get('/users/delete/{id}', 'UsersController@delete');
+        Route::post('/users/store', 'UsersController@store');
 
 //end user rootes
 
 //Roles Rootes
-Route::get('/roles/add', 'RolesController@add');
-Route::get('/roles/edit/{id}', 'RolesController@edit');
-Route::get('/roles', 'RolesController@index');
-Route::post('/roles/store', 'RolesController@store');
-Route::post('/roles/update', 'RolesController@update');
-Route::get('/roles/delete/{id}', 'RolesController@delete');
+        Route::get('/roles/add', 'RolesController@add');
+        Route::get('/roles/edit/{id}', 'RolesController@edit');
+        Route::get('/roles', 'RolesController@index');
+        Route::post('/roles/store', 'RolesController@store');
+        Route::post('/roles/update', 'RolesController@update');
+        Route::get('/roles/delete/{id}', 'RolesController@delete');
 //END ROLE ROOTES
-Route::get('/patients/add','PatientController@create');
-Route::post('/patient/store','PatientController@store');
-Route::get('/patient','PatientController@index');
-Route::get('/patient/file/{id}','PatientController@file');
-Route::get('/patient/profile/{id}','PatientController@profile');
+    });
+
+    Route::get('/patients/add', 'PatientController@create');
+    Route::post('/patient/store', 'PatientController@store');
+    Route::get('/patient', 'PatientController@index');
+    Route::get('/patient/file/{id}', 'PatientController@file');
+    Route::get('/patient/profile/{id}', 'PatientController@profile');
 //End file rootes
 //Files rootes
-Route::post('/file/store','FileController@store');
-Route::get('/file/history/{id}','FileController@history');
+    Route::post('/file/store', 'FileController@store');
+    Route::get('/file/history/{id}', 'FileController@history');
 //End Files rootes
-Route::get('/home', 'HomeController@index')->name('home');
+    Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/appointment', 'AppointmentsController@index');
-Route::post('/appointment','AppointmentsController@create');
-Route::get('/appointments/show','AppointmentsController@show');
+    Route::get('/appointment', 'AppointmentsController@index');
+    Route::post('/appointment', 'AppointmentsController@create');
+    Route::get('/appointments/show', 'AppointmentsController@show');
+});
