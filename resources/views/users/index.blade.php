@@ -53,7 +53,7 @@
                     @endforeach
                 </td>
                 <td>
-                    <a href="{{url('roles/edit/'."2")}}"
+                    <a href="{{url('/users/edit/'.$user->id)}}"
                        class="mb-2 mr-2 btn btn-oval btn-raised btn-success ripple">Edit </a>
                     <!-- Button trigger modal -->
                     <button class="mb-2 mr-2 btn btn-oval btn-raised btn-danger ripple" data-toggle="modal"

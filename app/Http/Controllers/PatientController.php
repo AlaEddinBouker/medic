@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\file;
 use App\Patient;
 use App\User;
+use App\Contract;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
@@ -28,7 +29,8 @@ class PatientController extends Controller
      */
     public function create()
     {
-        return view('patient.add');
+        $contracts=Contract::all();
+        return view('patient.add', compact('contracts'));
     }
 
     /**

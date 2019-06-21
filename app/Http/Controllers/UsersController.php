@@ -25,7 +25,7 @@ class UsersController extends Controller
         $this->validate($request, [
 			'name'	=>	'required',
 			'LastName'	=>	'required',
-            'email'	=>	'required|email',
+            'email'	=>	'required|string|email|max:255|unique:users,email',
             'password'	=>	'required|confirmed',
             'role'	=>	'required',
         ]);
@@ -49,8 +49,56 @@ class UsersController extends Controller
     }
     public function delete(Request $request)
     {
-
         User::where('id',$request['id'])->delete();
         return redirect()->back()->with('success_message', 'User was deleted successfully');
+    }
+    public function edit()
+    {
+        return view('Users.my-profile')->with('user', auth()->user());
+    }
+    public function useredit($id)
+    {
+        $user=User::where('id',$id)->first();
+        if($user==null)return back();
+        $roles=Role::all();
+
+        return view('Users.edit',compact('user','roles'));
+    }
+    public function update(Request $request)
+    {
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'LastName' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255|',
+            'password' => 'sometimes|nullable|string|min:6|confirmed',
+        ]);
+        $user = auth()->user();
+        $user->staus = $request->input('status');
+        $input = $request->except('password', 'password_confirmation');
+        if (! $request->filled('password')) {
+            $user->fill($input)->save();
+            return back()->with('success_message', 'Profile updated successfully!');
+        }
+        $user->password = Hash::make($request->input('password'));
+        $user->fill($input)->save();
+        return back()->with('success_message', 'Profile (and password) updated successfully!');
+    }
+    public function userupdate(Request $request)
+    {
+        $request->validate([
+            'email' => 'string|email|max:255',
+            'password' => 'sometimes|nullable|string|min:6|confirmed',
+        ]);
+        $user=User::where('id',$request['id'])->first();
+        $input = $request->except('password', 'password_confirmation', 'id');
+        if (! $request->filled('password')) {
+            $user->fill($input)->save();
+            return back()->with('success_message', 'User updated successfully!');
+        }
+        $user->password = Hash::make($request->input('password'));
+        $user->fill($input)->save();
+        //User::where('id',$request['id'])->update($data);
+
+        return back()->with('success_message', 'User updated successfully!');
     }
 }

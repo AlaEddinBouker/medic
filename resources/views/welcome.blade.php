@@ -38,14 +38,21 @@
         <ul class="navbar-nav ml-auto">
             <!-- Authentication Links -->
                                         <li class="nav-item">
+                    @guest
                     <a class="nav-link" href="/login">S'identifier</a>
+                    @else
+                    <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();
+                    document.getElementById('logout-form').submit();">Logout</a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            @csrf
+                        </form>
+                    @endguest
                 </li>
 
                                                             </ul>
     </nav>
 	  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container d-flex align-items-center">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
 	      <p class="button-custom order-lg-last mb-0"><a href="/appointment" class="btn btn-secondary py-2 px-3">Make An Appointment</a></p>

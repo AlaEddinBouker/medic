@@ -57,7 +57,7 @@
                                 class="ion-person"></em>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right">
-                        <a class="dropdown-item" href="profile.html"><em class="ion-home icon-fw"></em>Profile</a>
+                        <a class="dropdown-item" href="/my-profile"><em class="ion-home icon-fw"></em>Profile</a>
                         <div class="dropdown-divider" role="presentation"></div>
 
                         <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
@@ -180,6 +180,29 @@
                     @endrole
                     @role('Admin')
                     <li>
+                            <a class="ripple" href="#">
+                                    <span class="float-right nav-caret">
+                                        <em class="ion-ios-arrow-right"></em>
+                                    </span>
+                                <span class="float-right nav-label"></span>
+                                <span class="nav-icon">
+                                        <img class="invisible" data-svg-replace="src/images/connection-bars.svg"
+                                             alt="MenuItem">
+                                    </span>
+                                <span>Contracts</span>
+                            </a>
+                            <ul class="sidebar-subnav">
+                                <li>
+                                    <a class="ripple" href="{{url('/contracts')}}"><span
+                                                class="float-right nav-label"></span><span>Show Contracts</span></a>
+                                </li>
+                                <li>
+                                        <a class="ripple" href="{{url('/contracts/add')}}"><span
+                                                    class="float-right nav-label"></span><span>Add Contracts</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                    <li>
                         <a class="ripple" href="#">
                                 <span class="float-right nav-caret">
                                     <em class="ion-ios-arrow-right"></em>
@@ -189,12 +212,12 @@
                                     <img class="invisible" data-svg-replace="src/images/connection-bars.svg"
                                          alt="MenuItem">
                                 </span>
-                            <span>Appointments</span>
+                            <span>Contacts</span>
                         </a>
                         <ul class="sidebar-subnav">
                             <li>
-                                <a class="ripple" href="{{url('/appointments/show')}}"><span
-                                            class="float-right nav-label"></span><span>Show Appointments</span></a>
+                                <a class="ripple" href="{{url('/contact/show')}}"><span
+                                            class="float-right nav-label"></span><span>Show Contacts</span></a>
                             </li>
                         </ul>
                     </li>
@@ -217,8 +240,8 @@
                     </div>
                     @role('Admin')
                     <div class="col-sm-3 text-right d-none d-sm-block">
-                        <button class="mt-sm btn btn-labeled btn-secondary ripple" type="button">Add patients<span
-                                    class="btn-label btn-label-right"><i class="ion-plus-round"></i></span></button>
+                        <a href="{{url('/patients/add')}}" ><button class="mt-sm btn btn-labeled btn-secondary ripple" type="button">Add patients<span
+                                    class="btn-label btn-label-right"><i class="ion-plus-round"></i></span></button> </a>
                     </div>
                     @endrole
                 </div>

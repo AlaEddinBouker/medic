@@ -65,7 +65,15 @@
         <ul class="navbar-nav ml-auto">
             <!-- Authentication Links -->
                                         <li class="nav-item">
-                    <a class="nav-link" href="/login">S'identifier</a>
+                                                @guest
+                                                <a class="nav-link" href="/login">S'identifier</a>
+                                                @else
+                                                <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                document.getElementById('logout-form').submit();">Logout</a>
+                                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                                        @csrf
+                                                    </form>
+                                                @endguest
                 </li>
 
                                                             </ul>

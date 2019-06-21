@@ -29,29 +29,26 @@ class AppointmentsController extends Controller
 			'lname'	=>	'required',
             'phone'	=>	'required',
             'email'	=>	'required',
-            'date'	=>	'required',
-            'time'	=>	'required',
             'message'	=>	'required',
-            'payment'	=>	'required',
 		]);
-		
+
 		//Create new Message
 		$appoint = new Appointment;
 		$appoint->fname	=	$request->input('fname');
 		$appoint->lname	=	$request->input('lname');
         $appoint->phone	=	$request->input('phone');
         $appoint->email	=	$request->input('email');
-        $appoint->date	=	$request->input('date');
-        $appoint->time	=	$request->input('time');
+        $appoint->date	=	"NULL";
+        $appoint->time	=	"NULL";
         $appoint->message	=	$request->input('message');
-        $appoint->payment	=	$request->input('payment');
+        $appoint->payment	=	"NULL";
         $appoint->status	=	"Pending";
-		
+
 		//Save Message
 		$appoint->save();
-		
-		
-		return redirect()->back()->with('success_message', 'We successfully recieved your message!');  
+
+
+		return redirect()->back()->with('success_message', 'We successfully recieved your message!');
     }
 
     /**

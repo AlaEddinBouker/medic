@@ -90,9 +90,9 @@
                         <div class="col-sm-4">
                             <div class="mda-form-control">
                                 <select class="form-control" name="status" id="select2-stauts">
-                                    <option value="S">Célibataire</option>
-                                    <option value="M">Marié</option>
-                                    <option value="O">Autre</option>
+                                    <option value="Célibataire">Célibataire</option>
+                                    <option value="Marié">Marié</option>
+                                    <option value="Autre">Autre</option>
                                 </select>
                             </div>
                         </div>
@@ -108,9 +108,9 @@
                         <div class="col-sm-6">
                             <div class="mda-form-control">
                                 <select class="form-control" name="contract" id="select2-contract">
-                                    <option value="S">Type 1</option>
-                                    <option value="M">Type 2</option>
-                                    <option value="O">Type 3</option>
+                                    @foreach($contracts as $contract)
+                                        <option value="{{$contract->name}}">{{$contract->name}}</option>
+                                    @endforeach
                                 </select>
                             </div>
                         </div>

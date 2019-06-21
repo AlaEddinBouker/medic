@@ -25,7 +25,7 @@
                     <div class="mda-form-control"><input name="name" class="form-control" required tabindex="0"
                                                          aria-required="true" aria-invalid="true" value="{{$role->name}}">
                         <div class="mda-form-control-line"></div>
-                        <label>Name <span style="color: red">*</span></label></div>
+                        <label style="top: 0px !important;">Name <span style="color: red">*</span></label style="top: 0px !important;"></div>
                 </div>
             </div>
             <div class="col-sm-6">
@@ -33,7 +33,7 @@
                     <div class="mda-form-control">
                         <input class="form-control" name="displayName" required tabindex="0" aria-required="true" aria-invalid="true" value="{{$role->display_name}}">
                         <div class="mda-form-control-line"></div>
-                        <label>Display Name <span style="color: red">*</span></label></div>
+                        <label style="top: 0px !important;">Display Name <span style="color: red">*</span></label style="top: 0px !important;"></div>
                 </div>
             </div>
             <div class="col-sm-12">
@@ -41,7 +41,7 @@
                     <div class="mda-form-control">
                         <textarea class="form-control" name="description" rows="4" aria-multiline="true">{{$role->description}}</textarea>
                         <div class="mda-form-control-line"></div>
-                        <label>Description <span style="color: red">*</span></label></div>
+                        <label style="top: 0px !important;">Description <span style="color: red">*</span></label style="top: 0px !important;"></div>
                 </div>
             </div>
 

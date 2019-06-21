@@ -38,7 +38,15 @@
         <ul class="navbar-nav ml-auto">
             <!-- Authentication Links -->
                                         <li class="nav-item">
-                    <a class="nav-link" href="/login">S'identifier</a>
+                                                @guest
+                                                <a class="nav-link" href="/login">S'identifier</a>
+                                                @else
+                                                <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                document.getElementById('logout-form').submit();">Logout</a>
+                                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                                        @csrf
+                                                    </form>
+                                                @endguest
                 </li>
 
                                                             </ul>
@@ -48,7 +56,6 @@
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
-	      <p class="button-custom order-lg-last mb-0"><a href="/appointment" class="btn btn-secondary py-2 px-3">Make An Appointment</a></p>
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav mr-auto">
 	            <li class="nav-item active"><a href="/" class="nav-link pl-0">Home</a></li>
@@ -65,9 +72,9 @@
         <div class="container">
             <div class="row no-gutters slider-text align-items-center justify-content-center">
                 <div class="col-md-9 ftco-animate text-center">
-                    <h1 class="mb-2 bread">Appointment</h1>
+                    <h1 class="mb-2 bread">Contact</h1>
                     <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i
-                                    class="ion-ios-arrow-forward"></i></a></span> <span>Appointment <i
+                                    class="ion-ios-arrow-forward"></i></a></span> <span>Contact <i
                                 class="ion-ios-arrow-forward"></i></span></p>
                 </div>
             </div>
@@ -80,10 +87,7 @@
             <div class="row">
                 <div class="col-md-6 py-5 pr-md-5">
                     <div class="heading-section heading-section-white ftco-animate mb-5">
-                        <span class="subheading">Consultation</span>
-                        <h2 class="mb-4">Free Consultation</h2>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                            there live the blind texts.</p>
+                        <span class="subheading">Contact US</span>
                     </div>
                     <form action="#" method="POST" class="appointment-form ftco-animate">
                         @if (session()->has('success_message'))
@@ -122,35 +126,11 @@
                         </div>
                         <div class="d-md-flex">
                             <div class="form-group">
-                                <div class="input-wrap">
-                                    <div class="icon"><span class="ion-md-calendar"></span></div>
-                                    <input type="text" class="form-control appointment_date" name="date"
-                                        placeholder="Date">
-                                </div>
-                            </div>
-                            <div class="form-group ml-md-4">
-                                <div class="input-wrap">
-                                    <div class="icon"><span class="ion-ios-clock"></span></div>
-                                    <input type="text" class="form-control appointment_time" name="time"
-                                        placeholder="Time">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="d-md-flex">
-                            <div class="form-group">
                                 <textarea cols="30" rows="2" class="form-control" name="message"
                                     placeholder="Message"></textarea>
                             </div>
-                            <div class="form-group ml-md-4">
-                                    <div class="input-wrap">
-                                Payment :
-                                <input type="radio" name="payment" value="Virrement Banquaire" class="form-check-input"
-                                    selected>
-                                Virrement Banquaire
-                                    </div>
-                            </div>
                         </div>
-                        <input type="submit" value="Appointment" class="btn btn-secondary btn-lg btn-block py-3 px-4">
+                        <input type="submit" value="Send" class="btn btn-secondary btn-lg btn-block py-3 px-4">
                     </form>
                 </div>
                 <div class="col-lg-6 p-5 bg-counter aside-stretch">
