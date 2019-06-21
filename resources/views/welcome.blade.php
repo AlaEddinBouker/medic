@@ -40,9 +40,7 @@
                                         <li class="nav-item">
                     <a class="nav-link" href="/login">S'identifier</a>
                 </li>
-                                                <li class="nav-item">
-                        <a class="nav-link" href="/register">S'inscrire</a>
-                    </li>
+
                                                             </ul>
     </nav>
 	  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
@@ -190,7 +188,7 @@
 						<p></p>
 					</div>
 					<div class="col-md-3 d-flex align-items-center">
-						<p class="mb-0"><a href="#" class="btn btn-secondary px-4 py-3">Consutation</a></p>
+						<p class="mb-0"><a href="/examination" class="btn btn-secondary px-4 py-3">Consutation</a></p>
 					</div>
 				</div>
 			</div>

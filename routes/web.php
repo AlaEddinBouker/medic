@@ -14,7 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
+Route::get('/appointment', 'AppointmentsController@index');
+Route::post('/appointment', 'AppointmentsController@create');
+Route::get('/examination', 'ExaminationsController@index');
+Route::post('/examination', 'ExaminationsController@create');
 Auth::routes();
 Route::group(['middleware' => 'auth'], function () {
 
@@ -57,8 +60,6 @@ Route::group(['middleware' => 'auth'], function () {
 //End Files rootes
     Route::get('/home', 'HomeController@index')->name('home');
     Route::group(['middleware' => ['role:Admin']], function () {
-        Route::get('/appointment', 'AppointmentsController@index');
-        Route::post('/appointment', 'AppointmentsController@create');
         Route::get('/appointments/show', 'AppointmentsController@show');
     });
 
