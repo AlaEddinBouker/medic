@@ -131,9 +131,10 @@ class PatientController extends Controller
      * @param \App\Patient $patient
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Patient $patient)
+    public function delete(Request $request)
     {
-        //
+        Patient::where('id',$request['id'])->delete();
+        return back();
     }
     public function profile($id)
     {

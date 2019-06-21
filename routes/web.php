@@ -70,6 +70,8 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/home', 'HomeController@index')->name('home');
     Route::group(['middleware' => ['role:Admin']], function () {
         Route::get('/contact/show', 'AppointmentsController@show');
+        Route::get('/contact/delete/{id}', 'AppointmentsController@delete');
+        Route::get('/patient/delete/{id}', 'PatientController@delete');
     });
 
 });

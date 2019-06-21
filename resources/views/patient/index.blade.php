@@ -39,8 +39,30 @@
                         <a href="{{url('patient/file/'.$patient->id)}}"
                            class="mb-2 mr-2 btn btn-oval btn-raised btn-success ripple">File </a>
                         @role('Admin')
-                        <a href=""
-                           class="mb-2 mr-2 btn btn-oval btn-raised btn-danger ripple">Delete </a>
+                        <button class="mb-2 mr-2 btn btn-oval btn-raised btn-danger ripple" data-toggle="modal"
+                            data-target="#mymodal{{$patient->id}}">
+                        delete
+                    </button>
+                    <div class="modal fade" id="mymodal{{$patient->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Delete {{$patient->nom}}</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    Are you sure that you want to delete "{{$patient->nom}}"? ?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn  btn-oval  btn-raised btn-secondary ripple" data-dismiss="modal">Close</button>
+                                    <a  href="{{url('/patient/delete/'.$patient->id)}}" class="btn btn-oval btn-raised btn-danger " style="color: white;">Delete
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                         @endrole
                     </td>
                 </tr>
