@@ -181,6 +181,29 @@
                     @role('Admin')
                     <li>
                         <a class="ripple" href="#">
+                                    <span class="float-right nav-caret">
+                                        <em class="ion-ios-arrow-right"></em>
+                                    </span>
+                            <span class="float-right nav-label"></span>
+                            <span class="nav-icon">
+                                        <img class="invisible" data-svg-replace="src/images/connection-bars.svg"
+                                             alt="MenuItem">
+                                    </span>
+                            <span>Contracts</span>
+                        </a>
+                        <ul class="sidebar-subnav">
+                            <li>
+                                <a class="ripple" href="{{url('/contracts')}}"><span
+                                            class="float-right nav-label"></span><span>Show Contracts</span></a>
+                            </li>
+                            <li>
+                                <a class="ripple" href="{{url('/contracts/add')}}"><span
+                                            class="float-right nav-label"></span><span>Add Contracts</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="ripple" href="#">
                                 <span class="float-right nav-caret">
                                     <em class="ion-ios-arrow-right"></em>
                                 </span>
@@ -189,12 +212,12 @@
                                     <img class="invisible" data-svg-replace="src/images/connection-bars.svg"
                                          alt="MenuItem">
                                 </span>
-                            <span>Appointments</span>
+                            <span>Contacts</span>
                         </a>
                         <ul class="sidebar-subnav">
                             <li>
-                                <a class="ripple" href="{{url('/appointments/show')}}"><span
-                                            class="float-right nav-label"></span><span>Show Appointments</span></a>
+                                <a class="ripple" href="{{url('/contact/show')}}"><span
+                                            class="float-right nav-label"></span><span>Show Contacts</span></a>
                             </li>
                         </ul>
                     </li>
@@ -379,137 +402,137 @@
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="row mb">
-                                                    <div class="col-sm-8"><label class="switch">
+                                                    <div class="col-sm-8"><label class="mda-checkbox">
                                                             @if ($f->coupeOngles == 1)
 
                                                                 <input name="coupeOngles" type="checkbox"
                                                                        checked="checked" disabled>
-                                                                <span style="background-color: #ec407a !important;"></span></label>
+                                                                <em class="bg-red-500"></em> Coupe ongles</label>
+
 
                                                         @else
-                                                            <input name="coupeOngles" type="checkbox" disabled>
-                                                            <span></span></label>
+                                                            <input name="coupeOngles" type="checkbox"
+                                                                   disabled>
+                                                            <em class="bg-red-500"></em> Coupe ongles</label>
                                                         @endif
-                                                        Coupe ongles
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="row mb">
-                                                    <div class="col-sm-8"><label class="switch">
+                                                    <div class="col-sm-8"><label class="mda-checkbox">
                                                             @if ($f->douche == 1)
 
                                                                 <input name="douche" type="checkbox" checked="checked"
                                                                        disabled>
-                                                                <span style="background-color: #ec407a !important;"></span></label>
+                                                                <em class="bg-red-500"></em>Douche</label>
 
                                                         @else
                                                             <input name="douche" type="checkbox" disabled>
-                                                            <span></span></label>
+                                                            <em class="bg-red-500"></em>Douche</label>
                                                         @endif
-                                                        Douche
+
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="row mb">
-                                                    <div class="col-sm-8"><label class="switch">
+                                                    <div class="col-sm-8"><label class="mda-checkbox">
                                                             @if ($f->doucheShamp == 1)
 
                                                                 <input name="doucheShamp" type="checkbox"
                                                                        checked="checked" disabled>
-                                                                <span style="background-color: #ec407a !important;"></span></label>
-
+                                                                <em class="bg-red-500"></em>douche et champoing</label>
                                                         @else
                                                             <input name="doucheShamp" type="checkbox" disabled>
-                                                            <span></span></label>
+                                                            <em class="bg-red-500"></em>douche et champoing</label>
                                                         @endif
-                                                        douche et champoing
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="row mb">
-                                                    <div class="col-sm-8"><label class="switch">
+                                                    <div class="col-sm-8"><label class="mda-checkbox">
                                                             @if ($f->entretientChambre == 1)
 
                                                                 <input name="entretientChambre" type="checkbox"
                                                                        checked="checked" disabled>
-                                                                <span style="background-color: #ec407a !important;"></span></label>
+                                                                <em class="bg-red-500"></em> Entretient de
+                                                                chambre</label>
 
                                                         @else
                                                             <input name="entretientChambre" type="checkbox" disabled>
-                                                            <span></span></label>
+                                                            <em class="bg-red-500"></em> Entretient de chambre</label>
                                                         @endif
-                                                        Entretient de chambre
+
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="row mb">
-                                                    <div class="col-sm-8"><label class="switch">
+                                                    <div class="col-sm-8"><label class="mda-checkbox">
                                                             @if ($f->bainBouche == 1)
 
                                                                 <input name="bainBouche" type="checkbox"
                                                                        checked="checked" disabled>
-                                                                <span style="background-color: #ec407a !important;"></span></label>
+                                                                <em class="bg-red-500"></em>  Bain de bouche</label>
 
                                                         @else
                                                             <input name="bainBouche" type="checkbox" disabled>
-                                                            <span></span></label>
+                                                            <em class="bg-red-500"></em> Bain de bouche</label>
                                                         @endif
-                                                        Bain de bouche
+
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="row mb">
-                                                    <div class="col-sm-8"><label class="switch">
+                                                    <div class="col-sm-8"><label class="mda-checkbox">
                                                             @if ($f->coiffure == 1)
 
                                                                 <input name="coiffure" type="checkbox" checked="checked"
                                                                        disabled>
-                                                                <span style="background-color: #ec407a !important;"></span></label>
+                                                                <em class="bg-red-500"></em>Salon coiffure</label>
 
                                                         @else
                                                             <input name="coiffure" type="checkbox" disabled>
-                                                            <span></span></label>
+                                                            <em class="bg-red-500"></em>Salon coiffure</label>
                                                         @endif
-                                                        Salon coiffure
+
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="row mb">
-                                                    <div class="col-sm-8"><label class="switch">
+                                                    <div class="col-sm-8"><label class="mda-checkbox">
                                                             @if ($f->rassage == 1)
 
                                                                 <input name="rassage" type="checkbox" checked="checked"
                                                                        disabled>
-                                                                <span style="background-color: #ec407a !important;"></span></label>
+                                                                <em class="bg-red-500"></em>Rassage</label>
 
                                                         @else
                                                             <input name="rassage" type="checkbox" disabled>
-                                                            <span></span></label>
+                                                            <em class="bg-red-500"></em>Rassage</label>
                                                         @endif
-                                                        Rassage
+
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="row mb">
-                                                    <div class="col-sm-8"><label class="switch">
+                                                    <div class="col-sm-8"><label class="mda-checkbox">
                                                             @if ($f->soinPied == 1)
 
                                                                 <input name="soinPied" type="checkbox" checked="checked"
                                                                        disabled>
-                                                                <span style="background-color: #ec407a !important;"></span></label>
+                                                                <em class="bg-red-500"></em>Soin des pieds</label>
 
                                                         @else
                                                             <input name="soinPied" type="checkbox" disabled>
-                                                            <span></span></label>
+                                                            <em class="bg-red-500"></em>Soin des pieds</label>
                                                         @endif
-                                                        Soin des pieds
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -612,18 +635,17 @@
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="row mb">
-                                                    <div class="col-md-12"><label class="switch">
+                                                    <div class="col-md-12"><label class="mda-checkbox">
                                                             @if ($f->security == 1)
 
                                                                 <input name="security" type="checkbox" checked="checked"
                                                                        disabled>
-                                                                <span style="background-color: #ec407a !important;"></span></label>
-
+                                                                <em class="bg-red-500"></em>Sécurité</label>
                                                         @else
                                                             <input name="security" type="checkbox" disabled>
-                                                            <span></span></label>
+                                                            <em class="bg-red-500"></em>Sécurité</label>
                                                         @endif
-                                                        Sécurité
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -640,16 +662,16 @@
                                         <div class="row">
                                             <div class="col-md-4">
                                                 <div class="row mb">
-                                                    <div class="col-md-12"><label class="switch">
+                                                    <div class="col-md-12"><label class="mda-checkbox">
                                                             @if ($f->piscine == 1)
 
                                                                 <input name="piscine" type="checkbox" checked="checked"
                                                                        disabled>
-                                                                <span style="background-color: #ec407a !important;"></span></label>
+                                                                <em class="bg-red-500"></em>Piscine</label>
 
                                                         @else
                                                             <input name="piscine" type="checkbox" disabled>
-                                                            <span></span></label>
+                                                            <em class="bg-red-500"></em>Piscine</label>
                                                         @endif
                                                         Piscine
                                                     </div>
@@ -657,16 +679,16 @@
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="row mb">
-                                                    <div class="col-md-12"><label class="switch">
+                                                    <div class="col-md-12"><label class="mda-checkbox">
                                                             @if ($f->golf == 1)
 
                                                                 <input name="golf" type="checkbox" checked="checked"
                                                                        disabled>
-                                                                <span style="background-color: #ec407a !important;"></span></label>
+                                                                <em class="bg-red-500"></em>Golf</label>
 
                                                         @else
                                                             <input name="golf" type="checkbox" disabled>
-                                                            <span></span></label>
+                                                            <em class="bg-red-500"></em>Golf</label>
                                                         @endif
                                                         Golf
                                                     </div>
@@ -674,16 +696,16 @@
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="row mb">
-                                                    <div class="col-md-12"><label class="switch">
+                                                    <div class="col-md-12"><label class="mda-checkbox">
                                                             @if ($f->tennis == 1)
 
                                                                 <input name="tennis" type="checkbox" checked="checked"
                                                                        disabled>
-                                                                <span style="background-color: #ec407a !important;"></span></label>
+                                                                <em class="bg-red-500"></em>Tennis</label>
 
                                                         @else
                                                             <input name="tennis" type="checkbox" disabled>
-                                                            <span></span></label>
+                                                            <em class="bg-red-500"></em>Tennis</label>
                                                         @endif
                                                         Tennis
                                                     </div>
@@ -691,16 +713,16 @@
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="row mb">
-                                                    <div class="col-md-12"><label class="switch">
+                                                    <div class="col-md-12"><label class="mda-checkbox">
                                                             @if ($f->jeux == 1)
 
                                                                 <input name="jeux" type="checkbox" checked="checked"
                                                                        disabled>
-                                                                <span style="background-color: #ec407a !important;"></span></label>
+                                                                <em class="bg-red-500"></em>Jeux</label>
 
                                                         @else
                                                             <input name="jeux" type="checkbox" disabled>
-                                                            <span></span></label>
+                                                            <em class="bg-red-500"></em>Jeux</label>
                                                         @endif
                                                         Jeux
                                                     </div>
@@ -708,16 +730,16 @@
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="row mb">
-                                                    <div class="col-md-12"><label class="switch">
+                                                    <div class="col-md-12"><label class="mda-checkbox">
                                                             @if ($f->lecture == 1)
 
                                                                 <input name="lecture" type="checkbox" checked="checked"
                                                                        disabled>
-                                                                <span style="background-color: #ec407a !important;"></span></label>
+                                                              <em class="bg-red-500"></em>Lecture</label>
 
                                                         @else
                                                             <input name="lecture" type="checkbox" disabled>
-                                                            <span></span></label>
+                                                           <em class="bg-red-500"></em>Lecture</label>
                                                         @endif
                                                         Lecture
                                                     </div>
@@ -725,16 +747,16 @@
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="row mb">
-                                                    <div class="col-md-12"><label class="switch">
+                                                    <div class="col-md-12"><label class="mda-checkbox">
                                                             @if ($f->cinema == 1)
 
                                                                 <input name="cinema" type="checkbox" checked="checked"
                                                                        disabled>
-                                                                <span style="background-color: #ec407a !important;"></span></label>
+                                                               <em class="bg-red-500"></em>Cinema</label>
 
                                                         @else
                                                             <input name="cinema" type="checkbox" disabled>
-                                                            <span></span></label>
+                                                          <em class="bg-red-500"></em>Cinema</label>
                                                         @endif
                                                         Cinema
                                                     </div>
@@ -742,16 +764,16 @@
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="row mb">
-                                                    <div class="col-md-12"><label class="switch">
+                                                    <div class="col-md-12"><label class="mda-checkbox">
                                                             @if ($f->danse == 1)
 
                                                                 <input name="danse" type="checkbox" checked="checked"
                                                                        disabled>
-                                                                <span style="background-color: #ec407a !important;"></span></label>
+                                                               <em class="bg-red-500"></em>Dance</label>
 
                                                         @else
                                                             <input name="danse" type="checkbox" disabled>
-                                                            <span></span></label>
+                                                           <em class="bg-red-500"></em>Dance</label>
                                                         @endif
                                                         Dance
                                                     </div>
@@ -759,16 +781,16 @@
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="row mb">
-                                                    <div class="col-md-12"><label class="switch">
+                                                    <div class="col-md-12"><label class="mda-checkbox">
                                                             @if ($f->Television == 1)
 
                                                                 <input name="Television" type="checkbox"
                                                                        checked="checked" disabled>
-                                                                <span style="background-color: #ec407a !important;"></span></label>
+                                                               <em class="bg-red-500"></em>Television</label>
 
                                                         @else
                                                             <input name="Television" type="checkbox" disabled>
-                                                            <span></span></label>
+                                                            <em class="bg-red-500"></em>Television</label>
                                                         @endif
                                                         Television
                                                     </div>
@@ -776,18 +798,18 @@
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="row mb">
-                                                    <div class="col-md-12"><label class="switch">
+                                                    <div class="col-md-12"><label class="mda-checkbox">
                                                             @if ($f->tir == 1)
 
                                                                 <input name="tir" type="checkbox" checked="checked"
                                                                        disabled>
-                                                                <span style="background-color: #ec407a !important;"></span></label>
+                                                                <em class="bg-red-500"></em>Tir</label>
 
                                                         @else
                                                             <input name="tir" type="checkbox" disabled>
-                                                            <span></span></label>
+                                                            <em class="bg-red-500"></em>Tir</label>
                                                         @endif
-                                                        Tir
+                                                        
                                                     </div>
                                                 </div>
                                             </div>

@@ -53,13 +53,16 @@
     </nav>
 	  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container d-flex align-items-center">
-	        <span class="oi oi-menu"></span> Menu
+
 	      </button>
-	      <p class="button-custom order-lg-last mb-0"><a href="/appointment" class="btn btn-secondary py-2 px-3">Make An Appointment</a></p>
+	      <p class="button-custom order-lg-last mb-0"><a href="{{url('/examination')}}" class="btn btn-secondary py-2 px-3">Consultation</a></p>
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav mr-auto">
 	            <li class="nav-item active"><a href="/" class="nav-link pl-0">Home</a></li>
 	            <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
+				@if(\Illuminate\Support\Facades\Auth::check())
+					<li class="nav-item"><a href="{{url('/home')}}" class="nav-link">Dashboard</a></li>
+				@endif
 	        </ul>
 	      </div>
 	    </div>
