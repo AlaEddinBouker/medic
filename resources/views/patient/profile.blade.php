@@ -97,6 +97,7 @@
                                                           data-svg-replace="src/images/radio-waves.svg"
                                                           alt="MenuItem"></span><span>Dashboard</span></a>
                     </li>
+                    @role('Admin')
                     <li>
                         <a class="ripple" href="#">
                                 <span class="float-right nav-caret">
@@ -121,7 +122,10 @@
 
                         </ul>
                     </li>
+                    @endrole
+                    @role('Admin')
                     <li>
+
                         <a class="ripple" href="#">
                                 <span class="float-right nav-caret">
                                     <em class="ion-ios-arrow-right"></em>
@@ -145,6 +149,8 @@
 
                         </ul>
                     </li>
+                    @endrole
+                    @role('Admin'&&'personelle')
                     <li>
                         <a class="ripple" href="#">
                                 <span class="float-right nav-caret">
@@ -158,10 +164,12 @@
                             <span>Patients</span>
                         </a>
                         <ul class="sidebar-subnav">
+                            @role('Admin')
                             <li>
                                 <a class="ripple" href="{{url('/patients/add')}}"><span
                                             class="float-right nav-label"></span><span>Add Patient</span></a>
                             </li>
+                            @endrole
                             <li>
                                 <a class="ripple" href="{{url('/patient')}}"><span
                                             class="float-right nav-label"></span><span>Patiens list</span></a>
@@ -169,6 +177,8 @@
 
                         </ul>
                     </li>
+                    @endrole
+                    @role('Admin')
                     <li>
                         <a class="ripple" href="#">
                                 <span class="float-right nav-caret">
@@ -188,6 +198,7 @@
                             </li>
                         </ul>
                     </li>
+                    @endrole
                 </ul>
             </nav>
         </div>

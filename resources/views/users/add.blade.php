@@ -84,7 +84,7 @@
                 <div class="col-md-6">
                     <div class="mda-form-group float-label">
                         <div class="mda-form-control"><input type="text" name="tel1" class="form-control"
-                                                             required=""
+
                                                              tabindex="0"
                                                              aria-required="true" aria-invalid="true">
                             <div class="mda-form-control-line"></div>
@@ -94,7 +94,7 @@
                 <div class="col-md-6">
                     <div class="mda-form-group float-label">
                         <div class="mda-form-control"><input type="text" name="tel2" class="form-control"
-                                                             required=""
+
                                                              tabindex="0"
                                                              aria-required="true" aria-invalid="true">
                             <div class="mda-form-control-line"></div>
@@ -104,7 +104,7 @@
                 <div class="col-md-6">
                     <div class="mda-form-group float-label">
                         <div class="mda-form-control"><input type="text" name="cin" class="form-control"
-                                                             required=""
+
                                                              tabindex="0"
                                                              aria-required="true" aria-invalid="true">
                             <div class="mda-form-control-line"></div>
@@ -114,7 +114,6 @@
                 <div class="col-md-6">
                     <div class="mda-form-group float-label">
                         <div class="mda-form-control"><input type="text" name="passport" class="form-control"
-                                                             required=""
                                                              tabindex="0"
                                                              aria-required="true" aria-invalid="true">
                             <div class="mda-form-control-line"></div>
@@ -124,7 +123,6 @@
                 <div class="col-md-6">
                     <div class="mda-form-group float-label">
                         <div class="mda-form-control"><input type="text" name="address" class="form-control"
-                                                             required=""
                                                              tabindex="0"
                                                              aria-required="true" aria-invalid="true">
                             <div class="mda-form-control-line"></div>
