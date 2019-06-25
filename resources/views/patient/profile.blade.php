@@ -809,7 +809,7 @@
                                                             <input name="tir" type="checkbox" disabled>
                                                             <em class="bg-red-500"></em>Tir</label>
                                                         @endif
-                                                        
+
                                                     </div>
                                                 </div>
                                             </div>
