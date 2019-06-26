@@ -32,7 +32,7 @@
                                     <input name="nom" class="form-control" required="" tabindex="0"
                                            aria-required="true" aria-invalid="true">
                                     <div class="mda-form-control-line"></div>
-                                    <label>Nom</label></div>
+                                    <label>First Name</label></div>
                             </div>
                         </div>
                         <div class="col-sm-4">
@@ -41,7 +41,7 @@
                                     <input name="prenom" class="form-control" required="" tabindex="0"
                                            aria-required="true" aria-invalid="true">
                                     <div class="mda-form-control-line"></div>
-                                    <label>Prénom</label></div>
+                                    <label>Last Name</label></div>
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -50,7 +50,7 @@
                                                                  type="date" name="birth" data-date="12/13/2016"
                                                                  placeholder="Select a date..">
                                 <div class="mda-form-control-line"></div>
-                                <label>Date naissance</label></div>
+                                <label>Date of birth</label></div>
                         </div>
                         <div class="col-sm-4">
                             <div class="mda-form-group float-label">
@@ -67,7 +67,7 @@
                                     <input name="Proffession" class="form-control" required="" tabindex="0"
                                            aria-required="true" aria-invalid="true">
                                     <div class="mda-form-control-line"></div>
-                                    <label>Profession</label></div>
+                                    <label>Occupation</label></div>
                             </div>
                         </div>
                         <div class="col-sm-4">
@@ -76,7 +76,7 @@
                                     <input name="passport" class="form-control" required="" tabindex="0"
                                            aria-required="true" aria-invalid="true">
                                     <div class="mda-form-control-line"></div>
-                                    <label>passport</label></div>
+                                    <label>N° Passport</label></div>
                             </div>
                         </div>
                         <div class="col-sm-4">
@@ -90,9 +90,9 @@
                         <div class="col-sm-4">
                             <div class="mda-form-control">
                                 <select class="form-control" name="status" id="select2-stauts">
-                                    <option value="Célibataire">Célibataire</option>
-                                    <option value="Marié">Marié</option>
-                                    <option value="Autre">Autre</option>
+                                    <option value="Célibataire">Single</option>
+                                    <option value="Marié">Married</option>
+                                    <option value="Autre">Other</option>
                                 </select>
                             </div>
                         </div>
@@ -102,7 +102,7 @@
                                     <input type="number" name="enfant" class="form-control" required="" tabindex="0"
                                            aria-required="true" aria-invalid="true">
                                     <div class="mda-form-control-line"></div>
-                                    <label>Nombre d'enfant</label></div>
+                                    <label>Number of children (if maried)</label></div>
                             </div>
                         </div>
                         <div class="col-sm-6">
@@ -120,7 +120,7 @@
                                     <input type="number" name="chambre" class="form-control" required="" tabindex="0"
                                            aria-required="true" aria-invalid="true">
                                     <div class="mda-form-control-line"></div>
-                                    <label>Nombre chambre</label></div>
+                                    <label>Room number</label></div>
                             </div>
                         </div>
                     </div>
@@ -136,7 +136,7 @@
                                     <input name="gs" class="form-control" required="" tabindex="0"
                                            aria-required="true" aria-invalid="true">
                                     <div class="mda-form-control-line"></div>
-                                    <label>Groupe sanguin</label>
+                                    <label>Blood Type</label>
                                 </div>
                             </div>
                         </div>
@@ -146,7 +146,7 @@
                                     <input name="poid" class="form-control" required="" tabindex="0"
                                            aria-required="true" aria-invalid="true">
                                     <div class="mda-form-control-line"></div>
-                                    <label>Poid</label>
+                                    <label>Weight</label>
                                 </div>
                             </div>
                         </div>
@@ -156,7 +156,7 @@
                                     <input name="tm" class="form-control" required="" tabindex="0"
                                            aria-required="true" aria-invalid="true">
                                     <div class="mda-form-control-line"></div>
-                                    <label>Type maladies</label></div>
+                                    <label>Illness types</label></div>
                             </div>
                         </div>
                         <div class="col-sm-6">
@@ -165,7 +165,7 @@
                                     <input name="op" class="form-control" required="" tabindex="0"
                                            aria-required="true" aria-invalid="true">
                                     <div class="mda-form-control-line"></div>
-                                    <label>Opréations précédents</label></div>
+                                    <label>Previous Surgeries</label></div>
                             </div>
                         </div>
                         <div class="col-sm-6">
@@ -174,7 +174,7 @@
                                     <input name="dpm" class="form-control" required="" tabindex="0"
                                            aria-required="true" aria-invalid="true">
                                     <div class="mda-form-control-line"></div>
-                                    <label>Durée de prise de médicaments</label></div>
+                                    <label>Duration of medication use</label></div>
                             </div>
                         </div>
                         <div class="col-sm-6">
@@ -183,7 +183,7 @@
                                     <input name="phobies" class="form-control" required="" tabindex="0"
                                            aria-required="true" aria-invalid="true">
                                     <div class="mda-form-control-line"></div>
-                                    <label>Phobies</label></div>
+                                    <label>Phobias</label></div>
                             </div>
                         </div>
                         <div class="col-sm-6">
@@ -192,14 +192,14 @@
                                     <input name="alergies" class="form-control" required="" tabindex="0"
                                            aria-required="true" aria-invalid="true">
                                     <div class="mda-form-control-line"></div>
-                                    <label>Allegies</label></div>
+                                    <label>Allergies</label></div>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="mda-form-control6">
 
                                 <label class="switch switch-primary">
-                                    <input type="checkbox" name="alcool"  value="on" checked><span></span></label>Alcool
+                                    <input type="checkbox" name="alcool"  value="on" checked><span></span></label>Alcohol
 
                             </div>
 
@@ -211,7 +211,7 @@
                                               aria-multiline="true" tabindex="0"
                                               aria-invalid="false"></textarea>
                                     <div class="mda-form-control-line"></div>
-                                    <label>Type médicaments</label>
+                                    <label>Medications Types</label>
                                 </div>
                             </div>
                         </div>
@@ -226,18 +226,19 @@
                         <div class="col-sm-6">
                             <div class="mda-form-control">
                                 <select class="form-control" name="religon" id="select2-religion">
-                                    <option value="S">Religion 1</option>
-                                    <option value="M">Religion 2</option>
-                                    <option value="O">Religion 3</option>
+                                    <option value="S">Christian</option>
+                                    <option value="M">Jewish</option>
+                                    <option value="O">Muslim</option>
+                                    <option value="O">Other</option>
                                 </select>
                             </div>
                         </div>
                         <div class="col-lg-5 col-sm-8">
                             <div class="mda-form-control">
                                 <select class="form-control" name="language" id="select2-langue">
-                                    <option value="S">language 1</option>
-                                    <option value="M">language 2</option>
-                                    <option value="O">language 3</option>
+                                    <option value="S">English</option>
+                                    <option value="M">German</option>
+                                    <option value="O">French</option>
                                 </select>
                             </div>
                         </div>
@@ -251,7 +252,7 @@
                                               aria-multiline="true" tabindex="0"
                                               aria-invalid="false"></textarea>
                                     <div class="mda-form-control-line"></div>
-                                    <label>Passions</label>
+                                    <label>Hobbies</label>
                                 </div>
                             </div>
                         </div>
@@ -262,7 +263,7 @@
                                               aria-multiline="true" tabindex="0"
                                               aria-invalid="false"></textarea>
                                     <div class="mda-form-control-line"></div>
-                                    <label>Préference de l'emplacements</label>
+                                    <label>Preference of the burial site</label>
                                 </div>
                             </div>
                         </div>
@@ -273,7 +274,7 @@
                                               aria-multiline="true" tabindex="0"
                                               aria-invalid="false"></textarea>
                                     <div class="mda-form-control-line"></div>
-                                    <label>Préférence de type de cure</label>
+                                    <label>Preferences of cure type</label>
                                 </div>
                             </div>
                         </div>
@@ -284,7 +285,7 @@
                                               aria-multiline="true" tabindex="0"
                                               aria-invalid="false"></textarea>
                                     <div class="mda-form-control-line"></div>
-                                    <label>Remarques particulier</label>
+                                    <label>Particular notes</label>
                                 </div>
                             </div>
                         </div>

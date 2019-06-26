@@ -62,6 +62,7 @@
             <th>#ID</th>
             <th>First name</th>
             <th>Last Name</th>
+            <th>Email</th>
             <th>role</th>
             <th></th>
         </tr>
@@ -73,6 +74,7 @@
                 <td>{{$user->id}}</td>
                 <td>{{$user->name}}</td>
                 <td>{{$user->lastName}}</td>
+                <td>{{$user->email}}</td>
                 <td>
                     @foreach($user->roles as $role)
                         {{$role->name}}

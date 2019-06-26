@@ -48,12 +48,12 @@
         }
 
         .step.active {
-            background-color: lime;
+            background-color: deepskyblue;
         }
 
         /* Mark the steps that are finished and valid: */
         .step.finish {
-            background-color: lime;
+            background-color: deepskyblue;
         }
     </style>
 </head>
@@ -62,7 +62,27 @@
     <div class="container">
         <div class="row no-gutters d-flex align-items-start align-items-center px-3 px-md-0">
             <div class="col-lg-2 pr-4 align-items-center">
-                <a class="navbar-brand" href="/">Ibn Sina <span>House Care</span></a>
+                <a class="navbar-brand" href="/"><img src="/images/logo.png" alt="Ibn sina" height="100px"
+                                                      width="100px"> </a>
+            </div>
+            <div class="col-lg-9 d-none d-md-block pull-right" style="margin-left: 90px">
+                <div class="row d-flex">
+                    <div class="col-md-4 pr-4 d-flex topper align-items-center">
+                        <div class="icon bg-white mr-2 d-flex justify-content-center align-items-center"><span
+                                    class="icon-map"></span></div>
+                        <span class="text">Address: Boulevard Mongi Bali 4000 Sousse</span>
+                    </div>
+                    <div class="col-md pr-4 d-flex topper align-items-center">
+                        <div class="icon bg-white mr-2 d-flex justify-content-center align-items-center"><span
+                                    class="icon-paper-plane"></span></div>
+                        <span class="text">Email: ibnsinahousecare@gmail.com</span>
+                    </div>
+                    <div class="col-md pr-4 d-flex topper align-items-center">
+                        <div class="icon bg-white mr-2 d-flex justify-content-center align-items-center"><span
+                                    class="icon-phone2"></span></div>
+                        <span class="text">Phone: 73 338 520</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -70,10 +90,10 @@
         <!-- Authentication Links -->
         <li class="nav-item">
             @guest
-                <a class="nav-link" href="/login">S'identifier</a>
+                <a class="nav-link" href="/login">Login</a>
             @else
                 <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                document.getElementById('logout-form').submit();">Logout</a>
+                    document.getElementById('logout-form').submit();">Logout</a>
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                     @csrf
                 </form>

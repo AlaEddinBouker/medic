@@ -4,7 +4,7 @@
 @endsection
 
 @section('content')
-    <form name="f" method="POST" action="{{url('/contracts/edit')}}">
+    <form name="f" method="POST" action="{{url('/contracts/update')}}">
         @csrf
         <input type="text"  name="id" value="{{$contract->id}}" hidden>
         <div class="row">

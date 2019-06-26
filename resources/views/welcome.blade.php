@@ -59,7 +59,7 @@
         <!-- Authentication Links -->
         <li class="nav-item">
             @guest
-                <a class="nav-link" href="/login">S'identifier</a>
+                <a class="nav-link" href="/login">Login</a>
             @else
                 <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();
                     document.getElementById('logout-form').submit();">Logout</a>
@@ -110,9 +110,7 @@
             <div class="row no-gutters slider-text align-items-center justify-content-start"
                  data-scrollax-parent="true">
                 <div class="col-md-6 text ftco-animate">
-                    <h1 class="mb-4">We Care <span>About Your Health</span></h1>
-                    <h3 class="subheading">Your Health is Our Top Priority with Comprehensive, Affordable medical.</h3>
-                    <p><a href="#" class="btn btn-secondary px-4 py-3 mt-3">View our works</a></p>
+
                 </div>
             </div>
         </div>
@@ -123,9 +121,8 @@
             <div class="row no-gutters slider-text align-items-center justify-content-start"
                  data-scrollax-parent="true">
                 <div class="col-md-6 text ftco-animate">
-                    <h1 class="mb-4">We Care <span>About Your Health</span></h1>
-                    <h3 class="subheading">Your Health is Our Top Priority with Comprehensive, Affordable medical.</h3>
-                    <p><a href="#" class="btn btn-secondary px-4 py-3 mt-3">View our works</a></p>
+
+
                 </div>
             </div>
         </div>
@@ -136,9 +133,6 @@
             <div class="row no-gutters slider-text align-items-center justify-content-start"
                  data-scrollax-parent="true">
                 <div class="col-md-6 text ftco-animate">
-                    <h1 class="mb-4">We Care <span>About Your Health</span></h1>
-                    <h3 class="subheading">Your Health is Our Top Priority with Comprehensive, Affordable medical.</h3>
-                    <p><a href="#" class="btn btn-secondary px-4 py-3 mt-3">View our works</a></p>
                 </div>
             </div>
         </div>
@@ -154,15 +148,15 @@
             <div class="col-md-7 wrap-about py-4 py-md-5 ftco-animate">
                 <div class="heading-section mb-5">
                     <div class="pl-md-5 ml-md-5">
-                        <span class="subheading">Présentation de la residence</span>
+                        <span class="subheading">Residence presentation</span>
                         <h2 class="mb-4" style="font-size: 28px;">« Ibn Sina House Care »</h2>
                     </div>
                 </div>
                 <div class="pl-md-5 ml-md-5 mb-5">
-                    <p>est un opérateur spécialisé dans la prise en charge des personnes
-                        âgées étrangères. Notre résidence est un lieu de vie, de vacances et de soins pour les
-                        personnes qui mérite un atmosphère de détente après leurs retraites offrant un service
-                        d&#39;hôtellerie de haute gamme.</p>
+                    <p>is an operator specialized in caring of foreign seniors. Our residence
+                        is a place of life, holidays and care for the people who deserve an atmosphere of relaxation
+                        after their retirement with a high-end hotel services.
+                    </p>
                 </div>
             </div>
         </div>
@@ -177,19 +171,21 @@
             <div class="col-md-7 wrap-about py-4 py-md-5 ftco-animate">
                 <div class="heading-section mb-5">
                     <div class="pl-md-5 ml-md-5">
-                        <span class="subheading">Cadre d’hébergement</span>
+                        <span class="subheading">Accomodation atmosphere</span>
                     </div>
                 </div>
                 <div class="pl-md-5 ml-md-5 mb-5">
-                    <p>Notre résidence médicalisée dispose de chambres et de suites, confortables et spacieuses,
-                        disposant toutes d’un balcon ainsi que d’une vue sur mer inspirante, sur le jardin bien ou sur
-                        la piscine.</p>
-                    <p>Nos résidents ont à leur disposition un service hôtelier prestigieux et privilégié (salons,
-                        jardins, salle de cinéma et de spectacle, piscine intérieure d’eau douce chauffée, piscine
-                        intérieure et extérieure…), ainsi que divers services de soins (coiffeur, pédicure,
-                        esthéticienne (Thalasso intégrée à la résidence)</p>
-                    <p>Un programme d’animation varié et bien sûr, une équipe médicale (Médecins, Infirmiers,
-                        Psychologue kinésithérapeutes, diététicienne…).</p>
+                    <p>Our medecalized residence has comfortable and spacious rooms and suites, all with a balcony and
+                        an inspiring view of the sea, the garden or the pool.
+                    </p>
+                    <p>Our residents have at their disposal a prestigious and privileged hotel service (lounges,
+                        gardens, cinema and entertainment room, indoor heated freshwater pool, swimming pool
+                        interior and exterior...), as well as various care services (hairdresser, pedicure,
+                        beautician (Thalasso integrated into the residence).
+                    </p>
+                    <p>A varied entertainment program and of course, a medical team (Doctors, Nurses,
+                        Psychologist, physiotherapists, dietician...).
+                    </p>
                 </div>
             </div>
         </div>
@@ -204,16 +200,17 @@
             <div class="col-md-7 wrap-about py-4 py-md-5 ftco-animate">
                 <div class="heading-section mb-5">
                     <div class="pl-md-5 ml-md-5">
-                        <span class="subheading">Dossier informatisé des résidents</span>
+                        <span class="subheading">Residents' digital file</span>
                     </div>
                 </div>
                 <div class="pl-md-5 ml-md-5 mb-5">
-                    <p>Grâce à notre application disponible pour smartphone, tablette, et ordinateur, les membres de
-                        familles des résidents peuvent suivre les mises à jour de l’état de santé de son parent
-                        (température, tension, poids, glycémie, etc), aussi les soins, évènements et suivi alimentaire
-                        ainsi que le nom de la responsable ayant réalisée l’action. Sur cette interface sécurisée, les
-                        familles peuvent également utiliser la boîte de dialogue pour interagir avec la résidence et le
-                        personnel de santé et en plus visionner les photos et vidéos prises lors des activités.</p>
+                    <p>Thanks to our application available for smartphones, tablets, and computers, the
+                        family members of residents can follow updates on the health status of
+                        their parent (temperature, blood pressure, weight, blood sugar, etc.), also care, events and
+                        nutritional follow-up as well as the name of the person in charge who carried out the action.
+                        With this secure interface, families can also use the dialog box to interact with the residence
+                        and health care staff and view photos and videos taken during the activities.
+                    </p>
                 </div>
             </div>
         </div>
@@ -228,14 +225,16 @@
             <div class="col-md-7 wrap-about py-4 py-md-5 ftco-animate">
                 <div class="heading-section mb-5">
                     <div class="pl-md-5 ml-md-5">
-                        <span class="subheading">Quel climat fait-il à la résidence ?</span>
+                        <span class="subheading">What is the climate like at the residence?</span>
                     </div>
                 </div>
                 <div class="pl-md-5 ml-md-5 mb-5">
-                    <p>Un Climat méditerranéen avec 300 Jours de Soleil par An</p>
-                    <p>Riche d’une longue tradition médicale, et classée en 2009 au 27e rang mondial sur le critère de
-                        la santé par le rapport de Davos, la Tunisie se positionne aujourd’hui comme une destination
-                        phare de santé et de bien-être. </p>
+                    <p>
+                        A Mediterranean Climate with 300 Days of Sunshine per year
+                        Rich with great medical traditions, and ranked 27th in the world in 2009 on the criterion of
+                        health by the Davos report, Tunisia is now positioning itself as a leading destination for
+                        health and well-being.
+                    </p>
                 </div>
             </div>
         </div>
@@ -262,7 +261,7 @@
     <div class="container">
         <div class="row justify-content-center mb-5 pb-2">
             <div class="col-md-8 text-center heading-section ftco-animate">
-                <span class="subheading">Qualité</span>
+                <span class="subheading" style="font-size: 30px">QUALITIES</span>
             </div>
         </div>
         <div class="ftco-departments">
@@ -271,14 +270,14 @@
                     <div class="nav nav-pills d-flex text-center" id="v-pills-tab" role="tablist"
                          aria-orientation="vertical">
                         <a class="nav-link ftco-animate active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1"
-                           role="tab" aria-controls="v-pills-1" aria-selected="true">Prestation medicale</a>
+                           role="tab" aria-controls="v-pills-1" aria-selected="true">Medical services</a>
 
                         <a class="nav-link ftco-animate" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2"
-                           role="tab" aria-controls="v-pills-2" aria-selected="false">Prestation de bien-être</a>
+                           role="tab" aria-controls="v-pills-2" aria-selected="false">Well-being services</a>
 
                         <a class="nav-link ftco-animate" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3"
-                           role="tab" aria-controls="v-pills-3" aria-selected="false">Prestation hôtellerie et
-                            services</a>
+                           role="tab" aria-controls="v-pills-3" aria-selected="false">Hotel services
+                        </a>
 
                     </div>
                 </div>
@@ -290,7 +289,8 @@
                              aria-labelledby="day-1-tab">
                             <div class="row departments">
                                 <div class="col-lg-4 order-lg-last ">
-                                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="height: 100%" data-interval="3000">
+                                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel"
+                                         style="height: 100%" data-interval="3000">
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
                                                 <img class="d-block w-100" src="/images/slider1.jpg" alt="First slide">
@@ -302,11 +302,13 @@
                                                 <img class="d-block w-100" src="/images/slider3.jpg" alt="Third slide">
                                             </div>
                                         </div>
-                                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                                           data-slide="prev">
                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                             <span class="sr-only">Previous</span>
                                         </a>
-                                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                        <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                                           data-slide="next">
                                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                             <span class="sr-only">Next</span>
                                         </a>
@@ -317,30 +319,37 @@
                                         <div class="col-lg-12">
                                             <div class="services-2 d-flex">
                                                 <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center">
-                                                    <span class="flaticon-003-aroma" style="align-content: center;"><img src="/fonts/flaticon2/svg/care.png" height="50px" width="50px"></span></div>
+                                                    <span class="flaticon-003-aroma" style="align-content: center;"><img
+                                                                src="/fonts/flaticon2/svg/care.png" height="50px"
+                                                                width="50px"></span></div>
                                                 <div class="text">
-                                                    <h3>Prise en charge quotidienne </h3>
-                                                    <p>Le personnel de notre résidence fait de son mieux chaque jour
-                                                        pour répondre aux besoins de ses résidents et la disponibilité
-                                                        d'un personnel nombreux et expérimenté garantit une qualité de
-                                                        soins unique.</p>
-                                                    <p>L'équipe médicale est responsable des soins médicaux quotidiens
-                                                        des résidents.</p>
+                                                    <h3>Daily Care</h3>
+                                                    <p>The medical team is responsible for the daily medical care of the
+                                                        residents.
+
+                                                    </p>
+                                                    <p>The staff at our residence do their best every day to meet the
+                                                        needs of its residents and the availability of a large and
+                                                        experienced
+                                                        staff guarantees unique quality of care.</p>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-lg-12">
                                             <div class="services-2 d-flex">
                                                 <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center">
-                                                    <span class="flaticon-003-aroma" style="align-content: center;"><img src="/fonts/flaticon2/svg/meal.png" height="50px" width="50px"></span></div>
+                                                    <span class="flaticon-003-aroma" style="align-content: center;"><img
+                                                                src="/fonts/flaticon2/svg/meal.png" height="50px"
+                                                                width="50px"></span></div>
                                                 <div class="text">
-                                                    <h3>Nourriture</h3>
-                                                    <p>Puisque le plaisir vient du goût, tous les repas sont offerts aux
-                                                        résidents par la résidence (petit-déjeuner, déjeuner, goûter,
-                                                        dîner). Ils sont servis dans les restaurants de l'hôtel ou dans
-                                                        la chambre.</p>
-                                                    <p>D'autant que les repas sont préparés tous les jours sur place par
-                                                        notre chef et avec des produits frais.</p>
+                                                    <h3>Food and beverages</h3>
+                                                    <p>PSince pleasure comes from taste, all meals are offered to
+                                                        residents by the residence (breakfast, lunch, snack,
+                                                        dinner).</p>
+                                                    <p>They are served in the hotel restaurants or in the
+                                                        room, especially since meals are prepared every day on site by
+                                                        our chef and with fresh and healthy products adapted to the
+                                                        dietary plan to every resident particularly .</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -352,7 +361,8 @@
                         <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-day-2-tab">
                             <div class="row departments">
                                 <div class="col-lg-4 order-lg-last d-flex align-items-stretch">
-                                    <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel" style="height: 100%" data-interval="3000">
+                                    <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel"
+                                         style="height: 100%" data-interval="3000">
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
                                                 <img class="d-block w-100" src="/images/slider4.jpg" alt="First slide">
@@ -361,11 +371,13 @@
                                                 <img class="d-block w-100" src="/images/slider5.jpg" alt="Second slide">
                                             </div>
                                         </div>
-                                        <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
+                                        <a class="carousel-control-prev" href="#carouselExampleControls2" role="button"
+                                           data-slide="prev">
                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                             <span class="sr-only">Previous</span>
                                         </a>
-                                        <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+                                        <a class="carousel-control-next" href="#carouselExampleControls2" role="button"
+                                           data-slide="next">
                                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                             <span class="sr-only">Next</span>
                                         </a>
@@ -378,27 +390,32 @@
                                                 <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center">
                                                     <span class="icon-beach_access"></span></div>
                                                 <div class="text">
-                                                    <h3>Plage privée</h3>
-                                                    <p>Profitez d'une plage de sable fin, d'une piscine d'eau douce
-                                                        extérieure et intérieure et d'un jardin aussi beau et plaisant à
-                                                        l’oeil. </p>
+                                                    <h3>Private beach</h3>
+                                                    <p>Enjoy a fine sandy beach, an outdoor and indoor freshwater pool
+                                                        and a garden as beautiful and pleasant to the eye.
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-lg-12">
                                             <div class="services-2 d-flex">
                                                 <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center">
-                                                    <span class="flaticon-003-aroma" style="align-content: center;"><img src="/fonts/flaticon2/svg/001-relax.png" height="50px" width="50px"></span></div>
+                                                    <span class="flaticon-003-aroma" style="align-content: center;"><img
+                                                                src="/fonts/flaticon2/svg/001-relax.png" height="50px"
+                                                                width="50px"></span></div>
                                                 <div class="text">
-                                                    <h3>Centre de Thalasso</h3>
-                                                    <p>Dans une ambiance alliant tradition et modernité, le centre de
-                                                        thalassothérapie intégré à l'hôtel vous accueille et vous permet
-                                                        de garder la forme dans notre salle de sport spécialement conçue
-                                                        pour les seniors.</p>
-                                                    <p>Ce dernier propose des soins haut de gamme, hammam, sauna, salle
-                                                        de relaxation, salon de coiffure et bien plus encore.</p>
-                                                    <p>Soins des cheveux: Les cheveux, la manucure et la pédicure sont
-                                                        fournis gratuitement à tous les résidents.</p>
+                                                    <h3>Thalasso center</h3>
+                                                    <p>In an atmosphere combining tradition and modernity, the
+                                                        thalassotherapy centre integrated into the hotel welcomes our
+                                                        residents and allows them to keep in shape in our specially
+                                                        designed gym designed for seniors.
+                                                    </p>
+                                                    <p>We offer high-end treatments, hammam, sauna, relaxation room,
+                                                        lounge, hairdressing and much more.
+                                                    </p>
+                                                    <p>Care: Hair, manicure and pedicure are provided free of charge to
+                                                        all residents.
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -409,7 +426,8 @@
                         <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-day-3-tab">
                             <div class="row departments">
                                 <div class="col-lg-4 order-lg-last ">
-                                    <div id="carouselExampleControls3" class="carousel slide" data-ride="carousel" style="height: 100%" data-interval="3000">
+                                    <div id="carouselExampleControls3" class="carousel slide" data-ride="carousel"
+                                         style="height: 100%" data-interval="3000">
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
                                                 <img class="d-block w-100" src="/images/slided6.jpg" alt="First slide">
@@ -421,11 +439,13 @@
                                                 <img class="d-block w-100" src="/images/slider8.jpg" alt="Third slide">
                                             </div>
                                         </div>
-                                        <a class="carousel-control-prev" href="#carouselExampleControls3" role="button" data-slide="prev">
+                                        <a class="carousel-control-prev" href="#carouselExampleControls3" role="button"
+                                           data-slide="prev">
                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                             <span class="sr-only">Previous</span>
                                         </a>
-                                        <a class="carousel-control-next" href="#carouselExampleControls3" role="button" data-slide="next">
+                                        <a class="carousel-control-next" href="#carouselExampleControls3" role="button"
+                                           data-slide="next">
                                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                             <span class="sr-only">Next</span>
                                         </a>
@@ -436,14 +456,20 @@
                                         <div class="col-lg-12">
                                             <div class="services-2 d-flex">
                                                 <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center">
-                                                    <span class="flaticon-003-aroma" style="align-content: center;"><img src="/fonts/flaticon2/svg/chambre.png" height="50px" width="50px"></span></div>
+                                                    <span class="flaticon-003-aroma" style="align-content: center;"><img
+                                                                src="/fonts/flaticon2/svg/chambre.png" height="50px"
+                                                                width="50px"></span></div>
                                                 <div class="text">
-                                                    <h3>Chambres</h3>
-                                                    <p>Lumineuses et spacieuses, l’ensemble des chambres et suites
-                                                        disposent de balcons. Une magnifique vue sur mer, jardin ou sur
-                                                        la piscine. Les chambres de la résidence médicalisée sont
-                                                        équipées d’une salle de bains avec baignoire/douche ainsi que
-                                                        des toilettes séparées.</p>
+                                                    <h3>Rooms</h3>
+                                                    <p>
+                                                        Bright and spacious, all rooms and suites have balconies.
+                                                    </p>
+                                                    <p>
+                                                        A magnificent view on the sea, garden or swimming pool.</p>
+                                                    <p>
+                                                        The rooms of the residence are equipped with a bathroom with
+                                                        bath/shower and toilets separated.
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -452,33 +478,40 @@
                                                 <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center">
                                                     <span class="flaticon-24-hours"></span></div>
                                                 <div class="text">
-                                                    <h3>L’accompagnement</h3>
-                                                    <p>Chaque résident(e) est accompagné en permanence par une
-                                                        aide-soignante et ceci 24H/24.</p>
+                                                    <h3>Assistance</h3>
+                                                    <p>Each resident is permanently accompanied by a nursing assistant
+                                                        24 hours a day.
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-lg-12">
                                             <div class="services-2 d-flex">
                                                 <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center">
-                                                    <span class="flaticon-003-aroma" style="align-content: center;"><img src="/fonts/flaticon2/svg/losir.png" height="50px" width="50px"></span></div>
+                                                    <span class="flaticon-003-aroma" style="align-content: center;"><img
+                                                                src="/fonts/flaticon2/svg/losir.png" height="50px"
+                                                                width="50px"></span></div>
                                                 <div class="text">
-                                                    <h3>Activités</h3>
-                                                    <p>De nombreuses activités sont proposées pour les résidents : Salle
-                                                        de Spectacle, Cinéma, Jardin thérapeutique … toutes, d’ordre
-                                                        manuel, ludique, ou intellectuel.</p>
+                                                    <h3>Activities</h3>
+                                                    <p>Many activities are available for residents: Showroom, Cinema,
+                                                        Garden therapeutic... all of them playful, or intellectual.
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-lg-12">
                                             <div class="services-2 d-flex">
                                                 <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center">
-                                                    <span class="flaticon-003-aroma" style="align-content: center;"><img src="/fonts/flaticon2/svg/lavage.png" height="50px" width="50px"></span></div>
+                                                    <span class="flaticon-003-aroma" style="align-content: center;"><img
+                                                                src="/fonts/flaticon2/svg/lavage.png" height="50px"
+                                                                width="50px"></span></div>
                                                 <div class="text">
-                                                    <h3>Lavage du linge</h3>
-                                                    <p>Pour une offre encore plus complète, nous proposons un service de
-                                                        blanchisserie au sein même de la maison de retraite pour
-                                                        s’occuper du linge, et ce, à titre gracieux.</p>
+                                                    <h3>Laundry washing
+                                                    </h3>
+                                                    <p>For an even more complete offer, we offer a laundry service
+                                                        inside the residence to take care of cleaning residents laundry
+                                                        for free.
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -505,7 +538,7 @@
                 <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     Copyright &copy;
                     <script>document.write(new Date().getFullYear());</script>
-                    All rights reserved | Crafted By Devrows.</a>
+                    All rights reserved | Created By Dev Hipsters.</a>
                 </p>
             </div>
         </div>

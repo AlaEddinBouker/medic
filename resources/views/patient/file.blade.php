@@ -37,7 +37,7 @@ Fiche patient
     @csrf
     <input type="text" value="{{$id}}" name="id" hidden>
     <div class="cardbox">
-        <div class="cardbox-heading">Relevé</div>
+        <div class="cardbox-heading">Statement</div>
         <div class="cardbox-body">
             <div class="row">
                 <div class="col-md-4">
@@ -46,7 +46,7 @@ Fiche patient
                             <input name="alimentation" class="form-control" required="" tabindex="0"
                                 aria-required="true" aria-invalid="true">
                             <div class="mda-form-control-line"></div>
-                            <label>Alimentation</label>
+                            <label>Nutrition</label>
                         </div>
                     </div>
                 </div>
@@ -56,7 +56,7 @@ Fiche patient
                             <input name="petitdej" class="form-control" required="" tabindex="0" aria-required="true"
                                 aria-invalid="true">
                             <div class="mda-form-control-line"></div>
-                            <label>Petite déjeuner</label>
+                            <label>Breakfast</label>
                         </div>
                     </div>
                 </div>
@@ -66,7 +66,7 @@ Fiche patient
                             <input name="dejene" class="form-control" required="" tabindex="0" aria-required="true"
                                 aria-invalid="true">
                             <div class="mda-form-control-line"></div>
-                            <label>Déjeuner</label>
+                            <label>Lunch</label>
                         </div>
                     </div>
                 </div>
@@ -86,7 +86,7 @@ Fiche patient
                             <input name="poid" class="form-control" required="" tabindex="0" aria-required="true"
                                 aria-invalid="true">
                             <div class="mda-form-control-line"></div>
-                            <label>Poid</label>
+                            <label>Weight</label>
                         </div>
                     </div>
                 </div>
@@ -106,7 +106,7 @@ Fiche patient
                             <input name="tension" class="form-control" required="" tabindex="0" aria-required="true"
                                 aria-invalid="true">
                             <div class="mda-form-control-line"></div>
-                            <label>Tension</label>
+                            <label>Blood pressure</label>
                         </div>
                     </div>
                 </div>
@@ -116,7 +116,7 @@ Fiche patient
                             <input name="pouls" class="form-control" required="" tabindex="0" aria-required="true"
                                 aria-invalid="true">
                             <div class="mda-form-control-line"></div>
-                            <label>Pouls</label>
+                            <label>Heart rate</label>
                         </div>
                     </div>
                 </div>
@@ -126,7 +126,7 @@ Fiche patient
                             <input name="glycerine" class="form-control" required="" tabindex="0" aria-required="true"
                                 aria-invalid="true">
                             <div class="mda-form-control-line"></div>
-                            <label>Glycerine</label>
+                            <label>Blood sugar level</label>
                         </div>
                     </div>
                 </div>
@@ -143,14 +143,14 @@ Fiche patient
         </div>
     </div>
     <div class="cardbox">
-        <div class="cardbox-heading">Hygiéne</div>
+        <div class="cardbox-heading">Hygiene</div>
         <div class="cardbox-body">
             <div class="row">
                 <div class="col-md-4">
                     <div class="row mb">
                         <div class="col-sm-8"><label class="switch">
                                 <input name="cream" type="checkbox" checked="checked">
-                                <span></span></label>Créme
+                                <span></span></label>Cream Application
                         </div>
                     </div>
                 </div>
@@ -158,7 +158,7 @@ Fiche patient
                     <div class="row mb">
                         <div class="col-sm-8"><label class="switch">
                                 <input name="coupeOngles" type="checkbox" checked="checked">
-                                <span></span></label>Coupe ongles
+                                <span></span></label>Nails trimming
                         </div>
                     </div>
                 </div>
@@ -166,7 +166,7 @@ Fiche patient
                     <div class="row mb">
                         <div class="col-sm-8"><label class="switch">
                                 <input name="douche" type="checkbox" checked="checked">
-                                <span></span></label>Douche
+                                <span></span></label>Shower
                         </div>
                     </div>
                 </div>
@@ -174,7 +174,7 @@ Fiche patient
                     <div class="row mb">
                         <div class="col-sm-8"><label class="switch">
                                 <input name="doucheShamp" type="checkbox" checked="checked">
-                                <span></span></label>douche et champoing
+                                <span></span></label>Shower and shampoo
                         </div>
                     </div>
                 </div>
@@ -182,7 +182,7 @@ Fiche patient
                     <div class="row mb">
                         <div class="col-sm-8"><label class="switch">
                                 <input name="entretientChambre" type="checkbox" checked="checked">
-                                <span></span></label>Entretient de chambre
+                                <span></span></label>Room maintenance
                         </div>
                     </div>
                 </div>
@@ -190,7 +190,7 @@ Fiche patient
                     <div class="row mb">
                         <div class="col-sm-8"><label class="switch">
                                 <input name="bainBouche" type="checkbox" checked="checked">
-                                <span></span></label>Bain de bouche
+                                <span></span></label>Mouthwash
                         </div>
                     </div>
                 </div>
@@ -198,7 +198,7 @@ Fiche patient
                     <div class="row mb">
                         <div class="col-sm-8"><label class="switch">
                                 <input name="coiffure" type="checkbox" checked="checked">
-                                <span></span></label>Salon coiffure
+                                <span></span></label>Hairdressing Saloon
                         </div>
                     </div>
                 </div>
@@ -206,7 +206,7 @@ Fiche patient
                     <div class="row mb">
                         <div class="col-sm-8"><label class="switch">
                                 <input name="rassage" type="checkbox" checked="checked">
-                                <span></span></label>Rassage
+                                <span></span></label>Shaving
                         </div>
                     </div>
                 </div>
@@ -214,7 +214,7 @@ Fiche patient
                     <div class="row mb">
                         <div class="col-sm-8"><label class="switch">
                                 <input name="soinPied" type="checkbox" checked="checked">
-                                <span></span></label>Soin des pieds
+                                <span></span></label>Foot care
                         </div>
                     </div>
                 </div>
@@ -233,7 +233,7 @@ Fiche patient
                 <div class="col-md-6">
                     <div class="mda-form-group mda-input-group clockpicker" data-autoclose="true">
                         <div class="mda-form-control"><input name="heurR" class="form-control" type="text"
-                                placeholder="Heur reveille">
+                                placeholder="Wake-up time">
                             <div class="mda-form-control-line"></div>
                         </div>
                         <span class="mda-input-group-addon"><span class="ion-clock"></span></span>
@@ -242,7 +242,7 @@ Fiche patient
                 <div class="col-md-6">
                     <div class="mda-form-group mda-input-group clockpicker" data-autoclose="true">
                         <div class="mda-form-control"><input name="heurC" class="form-control" type="text"
-                                placeholder="Heur couche">
+                                placeholder="Bedtime">
                             <div class="mda-form-control-line"></div>
                         </div>
                         <span class="mda-input-group-addon"><span class="ion-clock"></span></span>
@@ -254,7 +254,7 @@ Fiche patient
                             <input name="sieste" class="form-control" required="" tabindex="0" aria-required="true"
                                 aria-invalid="true">
                             <div class="mda-form-control-line"></div>
-                            <label>Sieste</label>
+                            <label>Nap</label>
                         </div>
                     </div>
                 </div>
@@ -264,7 +264,7 @@ Fiche patient
                             <input name="deplacement" class="form-control" required="" tabindex="0" aria-required="true"
                                 aria-invalid="true">
                             <div class="mda-form-control-line"></div>
-                            <label>Deplacement</label>
+                            <label>Movement</label>
                         </div>
                     </div>
                 </div>
@@ -274,7 +274,7 @@ Fiche patient
                             <input name="promenade" class="form-control" required="" tabindex="0" aria-required="true"
                                 aria-invalid="true">
                             <div class="mda-form-control-line"></div>
-                            <label>Promenade</label>
+                            <label>Walk</label>
                         </div>
                     </div>
                 </div>
@@ -283,7 +283,7 @@ Fiche patient
     </div>
     <div class="cardbox">
         <div class="cardbox-heading">
-            Oraganisation et sécurité
+            Organisation et security
         </div>
         <div class="cardbox-body">
             <div class="row">
@@ -301,7 +301,7 @@ Fiche patient
                     <div class="row mb">
                         <div class="col-md-12"><label class="switch">
                                 <input name="security" type="checkbox" checked="checked">
-                                <span></span></label>Sécurité
+                                <span></span></label>Security
                         </div>
                     </div>
                 </div>
@@ -318,7 +318,7 @@ Fiche patient
                     <div class="row mb">
                         <div class="col-md-12"><label class="switch">
                                 <input name="piscine" type="checkbox" checked="checked">
-                                <span></span></label>Piscine
+                                <span></span></label>Pool
                         </div>
                     </div>
                 </div>
@@ -342,7 +342,7 @@ Fiche patient
                     <div class="row mb">
                         <div class="col-md-12"><label class="switch">
                                 <input name="jeux" type="checkbox" checked="checked">
-                                <span></span></label>Jeux
+                                <span></span></label>Games
                         </div>
                     </div>
                 </div>
@@ -350,7 +350,7 @@ Fiche patient
                     <div class="row mb">
                         <div class="col-md-12"><label class="switch">
                                 <input name="lecture" type="checkbox" checked="checked">
-                                <span></span></label>Lecture
+                                <span></span></label>Reading
                         </div>
                     </div>
                 </div>
@@ -366,7 +366,7 @@ Fiche patient
                     <div class="row mb">
                         <div class="col-md-12"><label class="switch">
                                 <input name="danse" type="checkbox" checked="checked">
-                                <span></span></label>Dance
+                                <span></span></label>Dancing
                         </div>
                     </div>
                 </div>
@@ -382,7 +382,7 @@ Fiche patient
                     <div class="row mb">
                         <div class="col-md-12"><label class="switch">
                                 <input name="tir" type="checkbox" checked="checked">
-                                <span></span></label>Tir
+                                <span></span></label>Shooting
                         </div>
                     </div>
                 </div>
@@ -391,7 +391,7 @@ Fiche patient
                         <div class="mda-form-control">
                             <textarea class="form-control" name="autre" rows="4" aria-multiline="true"></textarea>
                             <div class="mda-form-control-line"></div>
-                            <label>Autre <span style="color: red"></span></label></div>
+                            <label>Others <span style="color: red"></span></label></div>
                     </div>
                 </div>
             </div>

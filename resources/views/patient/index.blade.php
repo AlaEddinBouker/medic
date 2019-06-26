@@ -20,9 +20,9 @@
         <table class="table-datatable table table-striped table-hover mv-lg" id="datatable1">
             <thead>
             <tr>
-                <th>Nom</th>
-                <th>Prénom</th>
-                <th>Numéro de chambre</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Room Number</th>
                 <th class="sort-numeric"></th>
 
             </tr>

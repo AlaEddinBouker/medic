@@ -77,7 +77,7 @@
     <aside class="sidebar-container">
         <div class="sidebar-header">
             <div class="float-right pt-lg text-muted invisible"><em class="ion-close-round"></em></div>
-            <a class="sidebar-header-logo" href="#">
+            <a class="sidebar-header-logo" href="{{url('/')}}">
                 <img src="/src/images/logo.png" style="width: 30px; height: 30px;" alt="Logo"><span
                         class="sidebar-header-logo-text" style="font-size:14px;">Ibn sina house care</span></a>
         </div>
@@ -258,7 +258,7 @@
             </div>
 
         </section>
-        <footer><span>2019 - DEVROWS †</span></footer>
+        <footer><span>2019 - Dev Hipsters</span></footer>
     </main>
 </div>
 

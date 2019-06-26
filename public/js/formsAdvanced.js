@@ -762,21 +762,21 @@
         o()(function () {
             if (o.a.fn.select2 && o.a.fn.datepicker && o.a.fn.clockpicker && o.a.fn.colorpicker) {
                 o()("#select2-1").select2(), o()("#select2-2").select2(), o()("#select2-3").select2(), o()("#select2-4").select2({
-                    placeholder: "Sexe",
+                    placeholder: "Gender",
                     allowClear: !0
                 }),
                     o()("#select2-1").select2(), o()("#select2-2").select2(), o()("#select2-stauts").select2(), o()("#select2-stauts").select2({
-                    placeholder: "Status",
+                    placeholder: "marital Statue",
                     allowClear: !0
                 }), o()("#select2-1").select2(), o()("#select2-2").select2(), o()("#select2-contract").select2(), o()("#select2-contract").select2({
-                    placeholder: "Type de contrat",
+                    placeholder: "Contract type",
                     allowClear: !0
                 }), o()("#select2-1").select2(), o()("#select2-2").select2(), o()("#select2-religion").select2(), o()("#select2-religion").select2({
-                    placeholder: "Selectionner une religion",
+                    placeholder: "Select a religion",
                     allowClear: !0
                 }),
                     o()("#select2-1").select2(), o()("#select2-2").select2(), o()("#select2-langue").select2(), o()("#select2-langue").select2({
-                    placeholder: "Selectionner une language",
+                    placeholder: "Select a language",
                     allowClear: !0
                 }),
                     o()("#select2-1").select2(), o()("#select2-2").select2(), o()("#select2-shift").select2(), o()("#select2-shift").select2({
@@ -784,7 +784,7 @@
                     allowClear: !0
                 }),
                     o()("#select2-1").select2(), o()("#select2-2").select2(), o()("#select2-role").select2(), o()("#select2-role").select2({
-                    placeholder: "Selectionner un role",
+                    placeholder: "Select a  role",
                     allowClear: !0
                 }), o()("#example-datepicker-1").datepicker(), o()("#example-datepicker-2").datepicker(), o()("#example-datepicker-3").datepicker(), o()("#example-datepicker-4").on("show", fix_xeditable_conflict).datepicker({
                     autoclose: !0,

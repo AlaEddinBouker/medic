@@ -36,7 +36,8 @@ class ContractsController extends Controller
            'name'=>$request['name'],
        ];
        Contract::where('id',$request['id'])->update($data);
-       return back();
+        $contracts=Contract::all();
+       return view('contracts.index',compact('contracts'));
     }
     public function delete(Request $request)
     {

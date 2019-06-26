@@ -77,7 +77,7 @@
     <aside class="sidebar-container">
         <div class="sidebar-header">
             <div class="float-right pt-lg text-muted invisible"><em class="ion-close-round"></em></div>
-            <a class="sidebar-header-logo" href="#">
+            <a class="sidebar-header-logo" href="{{url('/')}}">
                 <img src="/src/images/logo.png" style="width: 30px; height: 30px;" alt="Logo"><span
                         class="sidebar-header-logo-text" style="font-size:14px;">Ibn sina house care</span></a>
         </div>
@@ -234,7 +234,7 @@
                     <div class="d-flex mr"><a href="#"><img class="rounded-circle thumb64" src="/src/images/03.jpg"
                                                             alt="User"></a></div>
                     <div class="media-body"><h4 class="mt-sm mb0">{{$patient->nom.' '.$patient->prenom}}</h4><span
-                                class="text-muted">Chambre Numéro {{$patient->room}}</span>
+                                class="text-muted">Room Number {{$patient->room}}</span>
                     </div>
                 </div>
             </div>
@@ -243,14 +243,14 @@
                     <div class="col-lg-7 col-xl-8">
                         <form class="cardbox" editable-form="" name="user.profileForm">
 
-                            <h5 class="cardbox-heading pb0">Fiche numéro {{$f->id}}  </h5>
+                            <h5 class="cardbox-heading pb0">File Number {{$f->id}}  </h5>
                             <br>
-                            <span class="cardbox-heading text-muted">Ajouter par {{Auth::user()->userinfo($f->user_id)}}</span>
+                            <span class="cardbox-heading text-muted">Added by {{Auth::user()->userinfo($f->user_id)}}</span>
                             <hr>
                             <div class="cardbox-body">
 
                                 <div class="cardbox">
-                                    <div class="cardbox-heading">Relevé</div>
+                                    <div class="cardbox-heading">Statement</div>
                                     <div class="cardbox-body">
                                         <div class="row">
                                             <div class="col-md-4">
@@ -261,7 +261,7 @@
                                                                aria-invalid="true" style="opacity : 1 !important;"
                                                                disabled>
                                                         <div class="mda-form-control-line"></div>
-                                                        <label style="top: 0px !important;">Alimentation</label>
+                                                        <label style="top: 0px !important;">Nutrition</label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -285,7 +285,7 @@
                                                                aria-required="true" aria-invalid="true"
                                                                style="opacity : 1 !important;" disabled>
                                                         <div class="mda-form-control-line"></div>
-                                                        <label style="top: 0px !important;">Déjeuner</label>
+                                                        <label style="top: 0px !important;">Breakfast</label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -308,7 +308,7 @@
                                                                tabindex="0" aria-required="true" aria-invalid="true"
                                                                style="opacity : 1 !important;" disabled>
                                                         <div class="mda-form-control-line"></div>
-                                                        <label style="top: 0px !important;">Poid</label>
+                                                        <label style="top: 0px !important;">Weight</label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -332,7 +332,7 @@
                                                                aria-required="true" aria-invalid="true"
                                                                style="opacity : 1 !important;" disabled>
                                                         <div class="mda-form-control-line"></div>
-                                                        <label style="top: 0px !important;">Tension</label>
+                                                        <label style="top: 0px !important;">Blood pressure</label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -344,7 +344,7 @@
                                                                aria-required="true" aria-invalid="true"
                                                                style="opacity : 1 !important;" disabled>
                                                         <div class="mda-form-control-line"></div>
-                                                        <label style="top: 0px !important;">Pouls</label>
+                                                        <label style="top: 0px !important;">Heart Rate</label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -356,7 +356,7 @@
                                                                aria-required="true" aria-invalid="true"
                                                                style="opacity : 1 !important;" disabled>
                                                         <div class="mda-form-control-line"></div>
-                                                        <label style="top: 0px !important;">Glycerine</label>
+                                                        <label style="top: 0px !important;">Blood sugar level</label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -368,7 +368,7 @@
                                                                aria-required="true" aria-invalid="true"
                                                                style="opacity : 1 !important;" disabled>
                                                         <div class="mda-form-control-line"></div>
-                                                        <label style="top: 0px !important;">Date de visite</label>
+                                                        <label style="top: 0px !important;">Doctor's visit</label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -378,7 +378,7 @@
 
 
                                 <div class="cardbox">
-                                    <div class="cardbox-heading">Hygiéne</div>
+                                    <div class="cardbox-heading">Hygiene</div>
                                     <div class="cardbox-body">
                                         <div class="row">
                                             <div class="col-md-4">
@@ -389,7 +389,7 @@
 
                                                                 <input name="cream" type="checkbox" checked="checked"
                                                                        disabled>
-                                                                <em class="bg-red-500"></em> Créme</label>
+                                                                <em class="bg-red-500"></em>Cream Application</label>
 
                                                         @else
                                                             <input name="cream" type="checkbox" disabled>
@@ -413,7 +413,7 @@
                                                         @else
                                                             <input name="coupeOngles" type="checkbox"
                                                                    disabled>
-                                                            <em class="bg-red-500"></em> Coupe ongles</label>
+                                                            <em class="bg-red-500"></em>Nails Trimming</label>
                                                         @endif
                                                     </div>
                                                 </div>
@@ -425,11 +425,11 @@
 
                                                                 <input name="douche" type="checkbox" checked="checked"
                                                                        disabled>
-                                                                <em class="bg-red-500"></em>Douche</label>
+                                                                <em class="bg-red-500"></em>Shower</label>
 
                                                         @else
                                                             <input name="douche" type="checkbox" disabled>
-                                                            <em class="bg-red-500"></em>Douche</label>
+                                                            <em class="bg-red-500"></em>Shower</label>
                                                         @endif
 
                                                     </div>
@@ -442,10 +442,10 @@
 
                                                                 <input name="doucheShamp" type="checkbox"
                                                                        checked="checked" disabled>
-                                                                <em class="bg-red-500"></em>douche et champoing</label>
+                                                                <em class="bg-red-500"></em>Shower and shampooing</label>
                                                         @else
                                                             <input name="doucheShamp" type="checkbox" disabled>
-                                                            <em class="bg-red-500"></em>douche et champoing</label>
+                                                            <em class="bg-red-500"></em>Shower and shampooing</label>
                                                         @endif
                                                     </div>
                                                 </div>
@@ -457,12 +457,11 @@
 
                                                                 <input name="entretientChambre" type="checkbox"
                                                                        checked="checked" disabled>
-                                                                <em class="bg-red-500"></em> Entretient de
-                                                                chambre</label>
+                                                                <em class="bg-red-500"></em>Room Maintenance</label>
 
                                                         @else
                                                             <input name="entretientChambre" type="checkbox" disabled>
-                                                            <em class="bg-red-500"></em> Entretient de chambre</label>
+                                                            <em class="bg-red-500"></em>Room Maintenance</label>
                                                         @endif
 
                                                     </div>
@@ -475,11 +474,11 @@
 
                                                                 <input name="bainBouche" type="checkbox"
                                                                        checked="checked" disabled>
-                                                                <em class="bg-red-500"></em>  Bain de bouche</label>
+                                                                <em class="bg-red-500"></em>  Mouthwash</label>
 
                                                         @else
                                                             <input name="bainBouche" type="checkbox" disabled>
-                                                            <em class="bg-red-500"></em> Bain de bouche</label>
+                                                            <em class="bg-red-500"></em> Mouthwash</label>
                                                         @endif
 
                                                     </div>
@@ -492,11 +491,11 @@
 
                                                                 <input name="coiffure" type="checkbox" checked="checked"
                                                                        disabled>
-                                                                <em class="bg-red-500"></em>Salon coiffure</label>
+                                                                <em class="bg-red-500"></em>Hairdessing Sallon</label>
 
                                                         @else
                                                             <input name="coiffure" type="checkbox" disabled>
-                                                            <em class="bg-red-500"></em>Salon coiffure</label>
+                                                            <em class="bg-red-500"></em>Hairdessing Sallon</label>
                                                         @endif
 
                                                     </div>
@@ -509,11 +508,11 @@
 
                                                                 <input name="rassage" type="checkbox" checked="checked"
                                                                        disabled>
-                                                                <em class="bg-red-500"></em>Rassage</label>
+                                                                <em class="bg-red-500"></em>Shaving</label>
 
                                                         @else
                                                             <input name="rassage" type="checkbox" disabled>
-                                                            <em class="bg-red-500"></em>Rassage</label>
+                                                            <em class="bg-red-500"></em>Shaving</label>
                                                         @endif
 
                                                     </div>
@@ -526,11 +525,11 @@
 
                                                                 <input name="soinPied" type="checkbox" checked="checked"
                                                                        disabled>
-                                                                <em class="bg-red-500"></em>Soin des pieds</label>
+                                                                <em class="bg-red-500"></em>Foot Care</label>
 
                                                         @else
                                                             <input name="soinPied" type="checkbox" disabled>
-                                                            <em class="bg-red-500"></em>Soin des pieds</label>
+                                                            <em class="bg-red-500"></em>Foot Care</label>
                                                         @endif
 
                                                     </div>
@@ -558,7 +557,7 @@
                                                                aria-required="true" aria-invalid="true"
                                                                style="opacity : 1 !important;" disabled>
                                                         <div class="mda-form-control-line"></div>
-                                                        <label style="top: 0px !important;">Heur reveille</label>
+                                                        <label style="top: 0px !important;">Wake-up Time</label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -570,7 +569,7 @@
                                                                aria-required="true" aria-invalid="true"
                                                                style="opacity : 1 !important;" disabled>
                                                         <div class="mda-form-control-line"></div>
-                                                        <label style="top: 0px !important;">Heur couche</label>
+                                                        <label style="top: 0px !important;">Bedtime</label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -582,7 +581,7 @@
                                                                aria-required="true" aria-invalid="true"
                                                                style="opacity : 1 !important;" disabled>
                                                         <div class="mda-form-control-line"></div>
-                                                        <label style="top: 0px !important;">Sieste</label>
+                                                        <label style="top: 0px !important;">Nap</label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -594,7 +593,7 @@
                                                                aria-required="true" aria-invalid="true"
                                                                style="opacity : 1 !important;" disabled>
                                                         <div class="mda-form-control-line"></div>
-                                                        <label style="top: 0px !important;">Deplacement</label>
+                                                        <label style="top: 0px !important;">Movement</label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -606,7 +605,7 @@
                                                                aria-required="true" aria-invalid="true"
                                                                style="opacity : 1 !important;" disabled>
                                                         <div class="mda-form-control-line"></div>
-                                                        <label style="top: 0px !important;">Promenade</label>
+                                                        <label style="top: 0px !important;">Walk</label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -617,7 +616,7 @@
 
                                 <div class="cardbox">
                                     <div class="cardbox-heading">
-                                        Oraganisation et sécurité
+                                        Organisation and security
                                     </div>
                                     <div class="cardbox-body">
                                         <div class="row">
@@ -640,10 +639,10 @@
 
                                                                 <input name="security" type="checkbox" checked="checked"
                                                                        disabled>
-                                                                <em class="bg-red-500"></em>Sécurité</label>
+                                                                <em class="bg-red-500"></em>Security</label>
                                                         @else
                                                             <input name="security" type="checkbox" disabled>
-                                                            <em class="bg-red-500"></em>Sécurité</label>
+                                                            <em class="bg-red-500"></em>Security</label>
                                                         @endif
 
                                                     </div>
@@ -656,7 +655,7 @@
 
                                 <div class="cardbox">
                                     <div class="card-header">
-                                        Loisir
+                                        Entertainment
                                     </div>
                                     <div class="card-body">
                                         <div class="row">
@@ -667,11 +666,11 @@
 
                                                                 <input name="piscine" type="checkbox" checked="checked"
                                                                        disabled>
-                                                                <em class="bg-red-500"></em>Piscine</label>
+                                                                <em class="bg-red-500"></em>Pool</label>
 
                                                         @else
                                                             <input name="piscine" type="checkbox" disabled>
-                                                            <em class="bg-red-500"></em>Piscine</label>
+                                                            <em class="bg-red-500"></em>Pool</label>
                                                         @endif
                                                         Piscine
                                                     </div>
@@ -718,11 +717,11 @@
 
                                                                 <input name="jeux" type="checkbox" checked="checked"
                                                                        disabled>
-                                                                <em class="bg-red-500"></em>Jeux</label>
+                                                                <em class="bg-red-500"></em>Games</label>
 
                                                         @else
                                                             <input name="jeux" type="checkbox" disabled>
-                                                            <em class="bg-red-500"></em>Jeux</label>
+                                                            <em class="bg-red-500"></em>Games</label>
                                                         @endif
                                                         Jeux
                                                     </div>
@@ -735,13 +734,13 @@
 
                                                                 <input name="lecture" type="checkbox" checked="checked"
                                                                        disabled>
-                                                              <em class="bg-red-500"></em>Lecture</label>
+                                                                <em class="bg-red-500"></em>Reading</label>
 
                                                         @else
                                                             <input name="lecture" type="checkbox" disabled>
-                                                           <em class="bg-red-500"></em>Lecture</label>
+                                                            <em class="bg-red-500"></em>Reading</label>
                                                         @endif
-                                                        Lecture
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -752,11 +751,11 @@
 
                                                                 <input name="cinema" type="checkbox" checked="checked"
                                                                        disabled>
-                                                               <em class="bg-red-500"></em>Cinema</label>
+                                                                <em class="bg-red-500"></em>Cinema</label>
 
                                                         @else
                                                             <input name="cinema" type="checkbox" disabled>
-                                                          <em class="bg-red-500"></em>Cinema</label>
+                                                            <em class="bg-red-500"></em>Cinema</label>
                                                         @endif
                                                         Cinema
                                                     </div>
@@ -769,11 +768,11 @@
 
                                                                 <input name="danse" type="checkbox" checked="checked"
                                                                        disabled>
-                                                               <em class="bg-red-500"></em>Dance</label>
+                                                                <em class="bg-red-500"></em>Dancing</label>
 
                                                         @else
                                                             <input name="danse" type="checkbox" disabled>
-                                                           <em class="bg-red-500"></em>Dance</label>
+                                                            <em class="bg-red-500"></em>Dancing</label>
                                                         @endif
                                                         Dance
                                                     </div>
@@ -786,7 +785,7 @@
 
                                                                 <input name="Television" type="checkbox"
                                                                        checked="checked" disabled>
-                                                               <em class="bg-red-500"></em>Television</label>
+                                                                <em class="bg-red-500"></em>Television</label>
 
                                                         @else
                                                             <input name="Television" type="checkbox" disabled>
@@ -803,11 +802,11 @@
 
                                                                 <input name="tir" type="checkbox" checked="checked"
                                                                        disabled>
-                                                                <em class="bg-red-500"></em>Tir</label>
+                                                                <em class="bg-red-500"></em>Shooting</label>
 
                                                         @else
                                                             <input name="tir" type="checkbox" disabled>
-                                                            <em class="bg-red-500"></em>Tir</label>
+                                                            <em class="bg-red-500"></em>Shooting</label>
                                                         @endif
 
                                                     </div>
@@ -820,7 +819,7 @@
                                                                   aria-multiline="true" style="opacity : 1 !important;"
                                                                   disabled>{!! $f->contention !!}</textarea>
                                                         <div class="mda-form-control-line"></div>
-                                                        <label>Autre <span style="color: red"></span></label></div>
+                                                        <label>Others <span style="color: red"></span></label></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -834,14 +833,14 @@
                     </div>
                     <div class="col-lg-5 col-xl-4">
                         <div class="cardbox">
-                            <h5 class="cardbox-heading">Historique</h5>
+                            <h5 class="cardbox-heading">History</h5>
                             @foreach($files as $file)
                                 <div class="cardbox-body pb0"><p class="float-left mr"><em
                                                 class="ion-record text-info"></em></p>
                                     <div class="oh">
                                         <p><strong class="mr-sm"><a href="#" data-toggle="modal"
-                                                                    data-target="#mymodal{{$file->id}}"> Fiche
-                                                    numéro {{$file->id}}</a></strong><span>
+                                                                    data-target="#mymodal{{$file->id}}">
+                                                    File Number {{$file->id}}</a></strong><span>
 
                                         <div class="clearfix">
                                             <div class="float-left text-muted"><em
@@ -849,7 +848,7 @@
                                             </div>
                                         </div>
                                                 <div class="float-right text-muted">
-                                                    Ajouter par {{Auth::user()->userinfo($file->user_id)}}
+                                                    Added by  {{Auth::user()->userinfo($file->user_id)}}
                                                 </div>
                                             </span>
                                     </div>
@@ -861,8 +860,10 @@
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLabel">Fiche
-                                                    numéro {{$file->id}}</h5>
+                                                <h5 class="modal-title" id="exampleModalLabel">File Number {{$file->id}}</h5>
+                                                <div class="float-right ">
+                                                   Added by  {{Auth::user()->userinfo($file->user_id)}}
+                                                </div>
                                                 <button type="button" class="close" data-dismiss="modal"
                                                         aria-label="Close">
                                                     <span aria-hidden="true">&times;</span>
@@ -870,7 +871,7 @@
                                             </div>
                                             <div class="modal-body">
                                                 <div class="cardbox">
-                                                    <div class="cardbox-heading">Relevé</div>
+                                                    <div class="cardbox-heading">Statement</div>
                                                     <div class="cardbox-body">
                                                         <div class="row">
                                                             <div class="col-md-4">
@@ -882,7 +883,7 @@
                                                                                aria-required="true" aria-invalid="true"
                                                                                style="opacity : 1 !important;" disabled>
                                                                         <div class="mda-form-control-line"></div>
-                                                                        <label style="top: 0px !important;">Alimentation</label>
+                                                                        <label style="top: 0px !important;">Nutrition</label>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -895,8 +896,7 @@
                                                                                aria-invalid="true"
                                                                                style="opacity : 1 !important;" disabled>
                                                                         <div class="mda-form-control-line"></div>
-                                                                        <label style="top: 0px !important;">Petite
-                                                                            déjeuner</label>
+                                                                        <label style="top: 0px !important;">Breakfast</label>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -909,7 +909,7 @@
                                                                                aria-invalid="true"
                                                                                style="opacity : 1 !important;" disabled>
                                                                         <div class="mda-form-control-line"></div>
-                                                                        <label style="top: 0px !important;">Déjeuner</label>
+                                                                        <label style="top: 0px !important;">Lunch</label>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -934,7 +934,7 @@
                                                                                aria-required="true" aria-invalid="true"
                                                                                style="opacity : 1 !important;" disabled>
                                                                         <div class="mda-form-control-line"></div>
-                                                                        <label style="top: 0px !important;">Poid</label>
+                                                                        <label style="top: 0px !important;">Weight</label>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -960,7 +960,7 @@
                                                                                aria-invalid="true"
                                                                                style="opacity : 1 !important;" disabled>
                                                                         <div class="mda-form-control-line"></div>
-                                                                        <label style="top: 0px !important;">Tension</label>
+                                                                        <label style="top: 0px !important;">Blood pressure</label>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -972,7 +972,7 @@
                                                                                aria-required="true" aria-invalid="true"
                                                                                style="opacity : 1 !important;" disabled>
                                                                         <div class="mda-form-control-line"></div>
-                                                                        <label style="top: 0px !important;">Pouls</label>
+                                                                        <label style="top: 0px !important;">Heart rate</label>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -985,7 +985,7 @@
                                                                                aria-invalid="true"
                                                                                style="opacity : 1 !important;" disabled>
                                                                         <div class="mda-form-control-line"></div>
-                                                                        <label style="top: 0px !important;">Glycerine</label>
+                                                                        <label style="top: 0px !important;">Blood sugar level</label>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -997,8 +997,7 @@
                                                                                aria-required="true" aria-invalid="true"
                                                                                style="opacity : 1 !important;" disabled>
                                                                         <div class="mda-form-control-line"></div>
-                                                                        <label style="top: 0px !important;">Date de
-                                                                            visite</label>
+                                                                        <label style="top: 0px !important;">Doctor's visit</label>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1008,7 +1007,7 @@
 
 
                                                 <div class="cardbox">
-                                                    <div class="cardbox-heading">Hygiéne</div>
+                                                    <div class="cardbox-heading">Hygiene</div>
                                                     <div class="cardbox-body">
                                                         <div class="row">
                                                             <div class="col-md-4">
@@ -1026,7 +1025,7 @@
                                                                             <span></span></label>
                                                                         @endif
 
-                                                                        Créme
+                                                                        Cream Application
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1045,7 +1044,7 @@
                                                                                    disabled>
                                                                             <span></span></label>
                                                                         @endif
-                                                                        Coupe ongles
+                                                                        Nails Trimming
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1063,7 +1062,7 @@
                                                                                    disabled>
                                                                             <span></span></label>
                                                                         @endif
-                                                                        Douche
+                                                                        Shower
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1082,7 +1081,7 @@
                                                                                    disabled>
                                                                             <span></span></label>
                                                                         @endif
-                                                                        douche et champoing
+                                                                        Shower and shampooing
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1101,7 +1100,7 @@
                                                                                    type="checkbox" disabled>
                                                                             <span></span></label>
                                                                         @endif
-                                                                        Entretient de chambre
+                                                                       Room maintenance
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1119,7 +1118,7 @@
                                                                                    disabled>
                                                                             <span></span></label>
                                                                         @endif
-                                                                        Bain de bouche
+                                                                        Mouthwash
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1137,7 +1136,7 @@
                                                                                    disabled>
                                                                             <span></span></label>
                                                                         @endif
-                                                                        Salon coiffure
+                                                                        Hairdressing saloon
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1155,7 +1154,7 @@
                                                                                    disabled>
                                                                             <span></span></label>
                                                                         @endif
-                                                                        Rassage
+                                                                        Shaving
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1173,7 +1172,7 @@
                                                                                    disabled>
                                                                             <span></span></label>
                                                                         @endif
-                                                                        Soin des pieds
+                                                                        Foot Care
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1199,8 +1198,7 @@
                                                                                aria-required="true" aria-invalid="true"
                                                                                style="opacity : 1 !important;" disabled>
                                                                         <div class="mda-form-control-line"></div>
-                                                                        <label style="top: 0px !important;">Heur
-                                                                            reveille</label>
+                                                                        <label style="top: 0px !important;">Wake-up time</label>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1212,8 +1210,7 @@
                                                                                aria-required="true" aria-invalid="true"
                                                                                style="opacity : 1 !important;" disabled>
                                                                         <div class="mda-form-control-line"></div>
-                                                                        <label style="top: 0px !important;">Heur
-                                                                            couche</label>
+                                                                        <label style="top: 0px !important;">Bedtime</label>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1226,7 +1223,7 @@
                                                                                aria-invalid="true"
                                                                                style="opacity : 1 !important;" disabled>
                                                                         <div class="mda-form-control-line"></div>
-                                                                        <label style="top: 0px !important;">Sieste</label>
+                                                                        <label style="top: 0px !important;">Nap</label>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1239,7 +1236,7 @@
                                                                                aria-invalid="true"
                                                                                style="opacity : 1 !important;" disabled>
                                                                         <div class="mda-form-control-line"></div>
-                                                                        <label style="top: 0px !important;">Deplacement</label>
+                                                                        <label style="top: 0px !important;">Movement</label>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1252,7 +1249,7 @@
                                                                                aria-invalid="true"
                                                                                style="opacity : 1 !important;" disabled>
                                                                         <div class="mda-form-control-line"></div>
-                                                                        <label style="top: 0px !important;">Promenade</label>
+                                                                        <label style="top: 0px !important;">Walk</label>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1263,7 +1260,7 @@
 
                                                 <div class="cardbox">
                                                     <div class="cardbox-heading">
-                                                        Oraganisation et sécurité
+                                                        Organisation and Security
                                                     </div>
                                                     <div class="cardbox-body">
                                                         <div class="row">
@@ -1294,7 +1291,7 @@
                                                                                    disabled>
                                                                             <span></span></label>
                                                                         @endif
-                                                                        Sécurité
+                                                                        Security
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1305,7 +1302,7 @@
 
                                                 <div class="cardbox">
                                                     <div class="card-header">
-                                                        Loisir
+                                                        Entertainment
                                                     </div>
                                                     <div class="card-body">
                                                         <div class="row">
@@ -1323,7 +1320,7 @@
                                                                                    disabled>
                                                                             <span></span></label>
                                                                         @endif
-                                                                        Piscine
+                                                                        Pool
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1375,7 +1372,7 @@
                                                                             <input name="jeux" type="checkbox" disabled>
                                                                             <span></span></label>
                                                                         @endif
-                                                                        Jeux
+                                                                        Games
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1393,7 +1390,7 @@
                                                                                    disabled>
                                                                             <span></span></label>
                                                                         @endif
-                                                                        Lecture
+                                                                        Reading
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1429,7 +1426,7 @@
                                                                                    disabled>
                                                                             <span></span></label>
                                                                         @endif
-                                                                        Dance
+                                                                        Dancing
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1464,7 +1461,7 @@
                                                                             <input name="tir" type="checkbox" disabled>
                                                                             <span></span></label>
                                                                         @endif
-                                                                        Tir
+                                                                        Shooting
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1476,7 +1473,7 @@
                                                                                   style="opacity : 1 !important;"
                                                                                   disabled>{!! $file->contention !!}</textarea>
                                                                         <div class="mda-form-control-line"></div>
-                                                                        <label>Autre <span
+                                                                        <label>Others <span
                                                                                     style="color: red"></span></label>
                                                                     </div>
                                                                 </div>
@@ -1500,7 +1497,7 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <a href="{{url('/file/history/'.$patient->id)}}"
-                                           class="btn btn-oval btn-primary btn-raised ">Voir tous</a>
+                                           class="btn btn-oval btn-primary btn-raised ">See All</a>
                                     </div>
                                 </div>
                             </div>
@@ -1513,7 +1510,7 @@
 
     </main>
 
-    <footer><span>2019 - DEVROWS </span></footer>
+    <footer><span>2019 - Dev Hipsters </span></footer>
     </main>
 </div>
 

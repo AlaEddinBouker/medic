@@ -27,30 +27,50 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <nav class="navbar py-4 navbar-expand-lg ftco_navbar navbar-light bg-light flex-row">
-    	<div class="container">
-    		<div class="row no-gutters d-flex align-items-start align-items-center px-3 px-md-0">
-    			<div class="col-lg-2 pr-4 align-items-center">
-		    		<a class="navbar-brand" href="/">Ibn Sina <span>House Care</span></a>
-	    		</div>
-		    </div>
-        </div>
-        <ul class="navbar-nav ml-auto">
-            <!-- Authentication Links -->
-                                        <li class="nav-item">
-                                                @guest
-                                                <a class="nav-link" href="/login">S'identifier</a>
-                                                @else
-                                                <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                document.getElementById('logout-form').submit();">Logout</a>
-                                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                                        @csrf
-                                                    </form>
-                                                @endguest
-                </li>
+  <nav class="navbar py-4 navbar-expand-lg ftco_navbar navbar-light bg-light flex-row">
+      <div class="container">
+          <div class="row no-gutters d-flex align-items-start align-items-center px-3 px-md-0">
+              <div class="col-lg-2 pr-4 align-items-center">
+                  <a class="navbar-brand" href="/"><img src="/images/logo.png" alt="Ibn sina" height="100px"
+                                                        width="100px"> </a>
+              </div>
+              <div class="col-lg-9 d-none d-md-block pull-right" style="margin-left: 90px">
+                  <div class="row d-flex">
+                      <div class="col-md-4 pr-4 d-flex topper align-items-center">
+                          <div class="icon bg-white mr-2 d-flex justify-content-center align-items-center"><span
+                                      class="icon-map"></span></div>
+                          <span class="text">Address: Boulevard Mongi Bali 4000 Sousse</span>
+                      </div>
+                      <div class="col-md pr-4 d-flex topper align-items-center">
+                          <div class="icon bg-white mr-2 d-flex justify-content-center align-items-center"><span
+                                      class="icon-paper-plane"></span></div>
+                          <span class="text">Email: ibnsinahousecare@gmail.com</span>
+                      </div>
+                      <div class="col-md pr-4 d-flex topper align-items-center">
+                          <div class="icon bg-white mr-2 d-flex justify-content-center align-items-center"><span
+                                      class="icon-phone2"></span></div>
+                          <span class="text">Phone: 73 338 520</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <ul class="navbar-nav ml-auto">
+          <!-- Authentication Links -->
+          <li class="nav-item">
+              @guest
+                  <a class="nav-link" href="/login">Login</a>
+              @else
+                  <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();
+                    document.getElementById('logout-form').submit();">Logout</a>
+                  <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                      @csrf
+                  </form>
+              @endguest
+          </li>
 
-                                                            </ul>
-    </nav>
+      </ul>
+  </nav>
 	  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container d-flex align-items-center">
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,8 +78,8 @@
 	      </button>
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav mr-auto">
-	            <li class="nav-item active"><a href="/" class="nav-link pl-0">Home</a></li>
-	            <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
+	            <li class="nav-item "><a href="{{url('/')}}" class="nav-link pl-0">Home</a></li>
+	            <li class="nav-item active"><a href="/contact" class="nav-link">Contact</a></li>
 	        </ul>
 	      </div>
 	    </div>
@@ -73,7 +93,7 @@
             <div class="row no-gutters slider-text align-items-center justify-content-center">
                 <div class="col-md-9 ftco-animate text-center">
                     <h1 class="mb-2 bread">Contact</h1>
-                    <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i
+                    <p class="breadcrumbs"><span class="mr-2"><a href="{{url('/')}}">Home <i
                                     class="ion-ios-arrow-forward"></i></a></span> <span>Contact <i
                                 class="ion-ios-arrow-forward"></i></span></p>
                 </div>
@@ -134,12 +154,12 @@
                     </form>
                 </div>
                 <div class="col-lg-6 p-5 bg-counter aside-stretch">
-                    <h3 class="vr">About Dr.Care Facts</h3>
+                    <h3 class="vr">About Our house Care center</h3>
                     <div class="row pt-4 mt-1">
                         <div class="col-md-6 d-flex justify-content-center counter-wrap ftco-animate">
                             <div class="block-18 p-5 bg-light">
                                 <div class="text">
-                                    <strong class="number" data-number="30">0</strong>
+                                    <strong class="number" data-number="10">0</strong>
                                     <span>Years of Experienced</span>
                                 </div>
                             </div>
@@ -147,7 +167,7 @@
                         <div class="col-md-6 d-flex justify-content-center counter-wrap ftco-animate">
                             <div class="block-18 p-5 bg-light">
                                 <div class="text">
-                                    <strong class="number" data-number="4500">0</strong>
+                                    <strong class="number" data-number="300">0</strong>
                                     <span>Happy Patients</span>
                                 </div>
                             </div>
@@ -155,7 +175,7 @@
                         <div class="col-md-6 d-flex justify-content-center counter-wrap ftco-animate">
                             <div class="block-18 p-5 bg-light">
                                 <div class="text">
-                                    <strong class="number" data-number="84">0</strong>
+                                    <strong class="number" data-number="20">0</strong>
                                     <span>Number of Doctors</span>
                                 </div>
                             </div>
@@ -163,7 +183,7 @@
                         <div class="col-md-6 d-flex justify-content-center counter-wrap ftco-animate">
                             <div class="block-18 p-5 bg-light">
                                 <div class="text">
-                                    <strong class="number" data-number="300">0</strong>
+                                    <strong class="number" data-number="50">0</strong>
                                     <span>Number of Staffs</span>
                                 </div>
                             </div>
