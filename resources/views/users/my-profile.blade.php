@@ -4,7 +4,7 @@
 @endsection
 
 @section('content')
-<form method="post" action="{{ route('users.update') }}">
+<form method="post" action="{{ route('users.update') }}" enctype="multipart/form-data">
     @method('patch')
     @if (session()->has('success_message'))
         <div class="alert alert-success">
@@ -138,6 +138,13 @@
                         <option value="M">Marié</option>
                         <option value="O">Autre</option>
                     </select>
+                </div>
+            </div>
+			<div class="col-md-6">
+                <div class="mda-form-control">
+					<h5>Avatar</h5>
+                    <input type="file" class="form-control-file" name="avatar" id="avatarFile" aria-describedby="fileHelp" accept="image/*">
+					<small id="fileHelp" class="form-text text-muted">Please upload a valid image file. Size of image should not be more than 2MB.</small>
                 </div>
             </div>
 

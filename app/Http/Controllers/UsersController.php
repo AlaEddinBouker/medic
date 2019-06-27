@@ -71,9 +71,15 @@ class UsersController extends Controller
             'LastName' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|',
             'password' => 'sometimes|nullable|string|min:6|confirmed',
+			'avatar' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
         $user = auth()->user();
         $user->staus = $request->input('status');
+		
+		$avatarName = $user->id.'_avatar'.time().'.'.request()->avatar->getClientOriginalExtension();
+		$request->avatar->storeAs('avatars',$avatarName);
+		$user->avatar = $avatarName;
+		
         $input = $request->except('password', 'password_confirmation');
         if (! $request->filled('password')) {
             $user->fill($input)->save();

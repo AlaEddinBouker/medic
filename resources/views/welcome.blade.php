@@ -31,10 +31,9 @@
     <div class="container">
         <div class="row no-gutters d-flex align-items-start align-items-center px-3 px-md-0">
             <div class="col-lg-2 pr-4 align-items-center">
-                <a class="navbar-brand" href="/"><img src="/images/logo.png" alt="Ibn sina" height="100px"
-                                                      width="100px"> </a>
+                <a class="navbar-brand" href="/"><img src="/images/logo.png" alt="Ibn sina"> </a>
             </div>
-            <div class="col-lg-9 d-none d-md-block pull-right" style="margin-left: 90px">
+            <div class="col-lg-9 d-none d-md-block pull-right" >
                 <div class="row d-flex">
                     <div class="col-md-4 pr-4 d-flex topper align-items-center">
                         <div class="icon bg-white mr-2 d-flex justify-content-center align-items-center"><span
@@ -74,7 +73,9 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container d-flex align-items-center">
 
-        </button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
         <p class="button-custom order-lg-last mb-0"><a href="{{url('/examination')}}"
                                                        class="btn btn-secondary py-2 px-3">Consultation</a></p>
         <div class="collapse navbar-collapse" id="ftco-nav">

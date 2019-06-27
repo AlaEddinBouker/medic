@@ -84,7 +84,7 @@
         <div class="sidebar-content">
             <div class="sidebar-toolbar text-center">
                 <a href="#">
-                    <img class="rounded-circle thumb64" src="/src/images/01.jpg" alt="Profile">
+                    <img class="rounded-circle thumb64" src="/storage/avatars/{{ Auth::user()->avatar }}" alt="Profile">
                 </a>
                 <div class="mt"><span data-i18n="user.WELCOME">Welcome</span><span>, {{Auth::user()->name}}</span>
                 </div>
@@ -172,7 +172,7 @@
                             @endrole
                             <li>
                                 <a class="ripple" href="{{url('/patient')}}"><span
-                                            class="float-right nav-label"></span><span>Patiens list</span></a>
+                                            class="float-right nav-label"></span><span>Patients list</span></a>
                             </li>
 
                         </ul>

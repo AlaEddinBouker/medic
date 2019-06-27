@@ -57,7 +57,7 @@
                                 class="ion-person"></em>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right">
-                        <a class="dropdown-item" href="profile.html"><em class="ion-home icon-fw"></em>Profile</a>
+                        <a class="dropdown-item" href="/my-profile"><em class="ion-home icon-fw"></em>Profile</a>
                         <div class="dropdown-divider" role="presentation"></div>
 
                         <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
@@ -84,7 +84,7 @@
         <div class="sidebar-content">
             <div class="sidebar-toolbar text-center">
                 <a href="#">
-                    <img class="rounded-circle thumb64" src="/src/images/01.jpg" alt="Profile">
+                    <img class="rounded-circle thumb64" src="/storage/avatars/{{ Auth::user()->avatar }}" alt="Profile">
                 </a>
                 <div class="mt"><span data-i18n="user.WELCOME">Welcome</span><span>, {{Auth::user()->name}}</span>
                 </div>

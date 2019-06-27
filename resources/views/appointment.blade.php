@@ -31,8 +31,7 @@
       <div class="container">
           <div class="row no-gutters d-flex align-items-start align-items-center px-3 px-md-0">
               <div class="col-lg-2 pr-4 align-items-center">
-                  <a class="navbar-brand" href="/"><img src="/images/logo.png" alt="Ibn sina" height="100px"
-                                                        width="100px"> </a>
+                  <a class="navbar-brand" href="/"><img src="/images/logo.png" alt="Ibn sina"> </a>
               </div>
               <div class="col-lg-9 d-none d-md-block pull-right" style="margin-left: 90px">
                   <div class="row d-flex">

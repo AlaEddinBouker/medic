@@ -71,89 +71,114 @@
     </div>
 </div>
 @endsection--}}
-<!DOCTYPE html>
-<html lang="en">
-<!-- Mirrored from themicon.co/theme/centric/v2.0/static-html5/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 May 2019 11:25:19 GMT -->
-<head>
-    <meta charset="utf-8">
 
-    <title>Centre medical Bensina</title>
-    <link href="/css/file0.css" rel="stylesheet">
-    <link href="/css/file1.css" rel="stylesheet">
-    <link href="/css/file2.css" rel="stylesheet">
-    <link href="/css/file3.css" rel="stylesheet">
-    <link href="/css/file4.css" rel="stylesheet">
-    <link href="/css/file5.css" rel="stylesheet">
-    <link href="/css/file6.css" rel="stylesheet">
-    <link href="/css/file7.css" rel="stylesheet">
-    <link href="/css/file8.css" rel="stylesheet">
-    <link href="/css/file9.css" rel="stylesheet">
-    <link href="/css/file10.css" rel="stylesheet">
-    <link href="/css/file11.css" rel="stylesheet">
-    <link href="/css/file12.css" rel="stylesheet">
-    <link href="/css/file13.css" rel="stylesheet">
-    <link href="/css/file14.css" rel="stylesheet">
-    <link href="/css/file15.css" rel="stylesheet">
-    <link href="/css/file16.css" rel="stylesheet">
-    <link href="/css/file17.css" rel="stylesheet">
-    <link href="/css/file18.css" rel="stylesheet">
-    <link href="/css/file19.css" rel="stylesheet">
-    <link href="/css/file20.css" rel="stylesheet">
-    <link href="/css/file21.css" rel="stylesheet">
-    <link href="/css/file22.css" rel="stylesheet">
-    <link href="/css/file23.css" rel="stylesheet">
+
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<head>
+	<title>Ibn Sina House Care</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
 </head>
 <body>
-<div class="layout-container">
-    <div class="page-container bg-blue-grey-900">
-        <div class="container-full">
-            <div class="container container-xs">
-                <div class="text-center"><img class="mv-lg img-fluid thumb64" src="src/images/logo.png"></div>
-                <form class="cardbox b0 form-validate" id="user-login" method="POST" action="{{ route('login') }}" name="loginForm" novalidate="">
-                    @csrf
-                    <div class="cardbox-heading">
-                        <div class="cardbox-title text-center">Login</div>
-                    </div>
-                    <div class="cardbox-body">
-                        <div class="mda-form-group float-label mda-input-group">
-                            <div class="mda-form-control">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-pic js-tilt" data-tilt>
+					<img src="images/img-01.png" alt="IMG">
+				</div>
 
-                                @error('email')
-                                <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                                <div class="mda-form-control-line"></div>
-                                <label>Email address</label></div>
+				<form class="login100-form validate-form" id="user-login" method="POST" action="{{ route('login') }}" name="loginForm">
+				@csrf
+					<span class="login100-form-title">
+						Login
+					</span>
+					@error('password')
+						<div class="alert alert-danger" role="alert">
+								<strong>{{ $message }}</strong>
+						</div>
+                    @enderror
+					@error('email')
+                      <div class="alert alert-danger" role="alert">
+                              <strong>{{ $message }}</strong>
+                      </div>
+                    @enderror
 
-                        </div>
-                        <div class="mda-form-group float-label mda-input-group">
-                            <div class="mda-form-control">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						<input id="email" class="input100 @error('email') is-invalid @enderror" type="email" name="email" placeholder="Email" value="{{ old('email') }}" required autocomplete="email" autofocus> 
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+					</div>
+				
 
-                                @error('password')
-                                <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
+					<div class="wrap-input100 validate-input" data-validate = "Password is required">
+						<input id="password" class="input100 @error('password') is-invalid @enderror" type="password" name="password" placeholder="Password" required autocomplete="current-password">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+					</div>
+					
+					
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn" type="submit">
+							Login
+						</button>
+					</div>
 
-                                <label>Password</label></div>
+					<div class="text-center p-t-12">
+						<span class="txt1">
+							Forgot
+						</span>
+						<a class="txt2" href="{{ route('password.request') }}">
+							Password?
+						</a>
+					</div>
 
-                        </div>
-                    </div>
-                    <button class="btn btn-primary btn-flat" type="submit">Authenticate</button>
-                </form>
-                <div class="text-center text-sm"><a class="text-inherit" href="{{ route('password.request') }}">Forgot password?</a></div>
-            </div>
-        </div>
-    </div>
-</div>
-<script type="text/javascript" src="/js/app.js"></script>
-<script type="text/javascript" src="/js/vendor.js"></script>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	
 
-
+	
+<!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+<!--===============================================================================================-->
+	<script src="js/mains.js"></script>
+	<script type="text/javascript" src="/js/vendor.js"></script>
 
 </body>
-<!-- Mirrored from themicon.co/theme/centric/v2.0/static-html5/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 May 2019 11:25:20 GMT -->
 </html>

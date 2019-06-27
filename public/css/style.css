@@ -3474,6 +3474,10 @@ input[type="button"].btn-block {
   white-space: nowrap; }
   .navbar-brand:hover, .navbar-brand:focus {
     text-decoration: none; }
+.navbar-brand > img {
+  height: auto;
+  width: 50%;
+}  
 
 .navbar-nav {
   display: -webkit-box;
@@ -5392,7 +5396,9 @@ button.bg-dark:focus {
   content: ""; }
 
 .d-none {
-  display: none !important; }
+  /*display: none !important; */
+  margin-left: 5%;
+  }
 
 .d-inline {
   display: inline !important; }
@@ -9761,3 +9767,18 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+@media only screen and (max-width: 767px) {
+  .navbar-brand {
+    width: 20% !important;
+  }
+  .icon{
+	  width: 25px !important;
+	  height: 25px !important;
+  }
+  .d-none {
+    margin-left: 2% !important;
+  }
+}	
+
+	
