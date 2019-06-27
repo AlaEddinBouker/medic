@@ -13,12 +13,12 @@ class UsersController extends Controller
     public function index()
     {
         $users=User::all();
-        return view('Users.index',compact('users'));
+        return view('users.index',compact('users'));
     }
     public  function add()
     {
         $roles=Role::all();
-        return view('Users/add',compact('roles'));
+        return view('users/add',compact('roles'));
     }
     public  function store(Request $request)
     {
@@ -54,7 +54,7 @@ class UsersController extends Controller
     }
     public function edit()
     {
-        return view('Users.my-profile')->with('user', auth()->user());
+        return view('users.my-profile')->with('user', auth()->user());
     }
     public function useredit($id)
     {
@@ -62,7 +62,7 @@ class UsersController extends Controller
         if($user==null)return back();
         $roles=Role::all();
 
-        return view('Users.edit',compact('user','roles'));
+        return view('users.edit',compact('user','roles'));
     }
     public function update(Request $request)
     {

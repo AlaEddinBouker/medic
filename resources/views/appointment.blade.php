@@ -160,7 +160,7 @@
                             <div class="block-18 p-5 bg-light">
                                 <div class="text">
                                     <strong class="number" data-number="10">0</strong>
-                                    <span>Years of Experienced</span>
+                                    <span>Years of Experience</span>
                                 </div>
                             </div>
                         </div>
@@ -200,8 +200,8 @@
           <div class="row">
             <div class="col-md-12 text-center">
 
-              <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-    Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | Crafted By Devrows.</a>
+              <p>
+    Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | Crafted By Dev Hipsters.</a>
   </p>
             </div>
           </div>
